@@ -5,6 +5,19 @@
 This project's been developed while taking
 [Kottans Frontend Course](https://github.com/kottans/frontend).
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  
+*generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [HTML5 Checkout Form Example](#html5-checkout-form-example)
+  - [The Task](#the-task)
+    - [Notes from mock-up author](#notes-from-mock-up-author)
+  - [Assets](#assets)
+  - [Time Track](#time-track)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## The Task
 
  * Make a form according to mockup: 
@@ -22,10 +35,14 @@ This project's been developed while taking
  updated as the user go through the form. New steps will be 
  revealed progressively.
  
+[TOC :arrow_double_up: ](#table-of-contents)
+ 
 ## Assets
  
  * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
    [Local README.md](fonts/proxima-nova/README.md)
+   
+[TOC :arrow_double_up: ](#table-of-contents)
     
 ## Time Track
 
