@@ -15,7 +15,13 @@ This project's been developed while taking
  * Test the result in all available browsers & on different devices.  
  * Turn off CSS styling and check how your form looks and 
    if it is still usable.
-   
+ 
+ ### Notes from mock-up author
+ 
+ > The top panel (order summary + help) will be sticky and lively
+ updated as the user go through the form. New steps will be 
+ revealed progressively.
+ 
  ## Assets
  
   * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
