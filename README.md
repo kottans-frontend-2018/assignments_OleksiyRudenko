@@ -16,16 +16,16 @@ This project's been developed while taking
  * Turn off CSS styling and check how your form looks and 
    if it is still usable.
  
- ### Notes from mock-up author
+### Notes from mock-up author
  
  > The top panel (order summary + help) will be sticky and lively
  updated as the user go through the form. New steps will be 
  revealed progressively.
  
- ## Assets
+## Assets
  
-  * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
-    [Local README.md](fonts/proxima-nova/README.md)
+ * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
+   [Local README.md](fonts/proxima-nova/README.md)
     
 ## Time Track
 
