@@ -47,8 +47,8 @@
                 </div>
                 <div id="order-main">
                     <form>
-                        <h1>Select what you want to translate</h1>
-                        <div id="form-section-document-type">
+                        <fieldset id="form-section-document-type">
+                            <legend>Select what you want to translate</legend>
                             <ul>
                                 <li><input type="radio" name="document-type" id="document-type-1" value="website" />
                                     <label for="document-type-1">Website</label></li>
@@ -57,9 +57,9 @@
                                 <li><input type="radio" name="document-type" id="document-type-3" value="social-account" />
                                     <label for="document-type-3">Social Account</label></li>
                             </ul>
-                        </div>
-                        <div id="form-section-upload">
-                            <h2>Upload your documents</h2>
+                        </fieldset>
+                        <fieldset id="form-section-upload">
+                            <legend>Upload your documents</legend>
                             <div>(Doc, Docx, Text, PDF, Markdown)</div>
                             <button>Upload new file</button>
                             <table>
@@ -86,9 +86,9 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div id="form-section-languages">
-                            <h2>Choose your language pairings</h2>
+                        </fieldset>
+                        <fieldset id="form-section-languages">
+                            <legend>Choose your language pairings</legend>
                             <div>
                                 <label for="language-from">From</label>
                                 <select id="language-from" name="language-from">
@@ -120,9 +120,9 @@
 
                                 <button>Add</button>
                             </div>
-                        </div>
-                        <div id="form-section-tone">
-                            <h2>Select your desired tone</h2>
+                        </fieldset>
+                        <fieldset id="form-section-tone">
+                            <legend>Select your desired tone</legend>
                             <ul>
                                 <li><input type="radio" name="address-tone" id="address-tone-1" value="friendly" />
                                     <label for="address-tone-1">Friendly / Casual</label></li>
@@ -131,9 +131,9 @@
                                 <li><input type="radio" name="address-tone" id="address-tone-3" value="formal" />
                                     <label for="address-tone-3">Media / Formal</label></li>
                             </ul>
-                        </div>
-                        <div id="form-section-urgency">
-                            <h2>Tell us how urgent this job is</h2>
+                        </fieldset>
+                        <fieldset id="form-section-urgency">
+                            <legend>Tell us how urgent this job is</legend>
                             <ul>
                                 <li><input type="radio" name="urgency" id="urgency-1" value="not-urgent" />
                                     <label for="urgency-1">I got time</label></li>
@@ -154,9 +154,9 @@
                                     will gladly overtime to only deliver the job as soon as it only possible.
                                 </div>
                             </div>
-                        </div>
-                        <div id="form-section-signup">
-                            <h2>Sign up and choose a payment method</h2>
+                        </fieldset>
+                        <fieldset id="form-section-signup">
+                            <legend>Sign up and choose a payment method</legend>
                             <div>Already have an account with us? <a href="#">Sign in</a>.</div>
                             <div>
                                 <label for="user-name">Full name</label>
@@ -209,15 +209,15 @@
                                        title="Must contain a valid CVV/CVV2 3- or 4-digit code"
                                        placeholder="000" required />
                             </div>
-                        </div>
-                        <div id="form-footer">
+                        </fieldset>
+                        <fieldset id="form-footer">
                             <div>
                                 <input id="tnc-consent" type="checkbox" checked />
                                 <label for="tnc-consent">I agree to the <a href="#">Terms & Conditions</a></label>
                             </div>
                             <input type="submit" value="Place order" />
                             <button>Print a quote</button>
-                        </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
