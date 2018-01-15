@@ -1,0 +1,11 @@
+
+
+/* === Logo ===
+   Repaint BW logo.
+   Source: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437
+*/
+
+.logo-light {
+    -webkit-filter: invert(80%) brightness(80%);
+    filter: invert(80%) brightness(80%);
+}
