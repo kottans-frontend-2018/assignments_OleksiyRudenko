@@ -46,11 +46,11 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 02h50`
+ * `TOTAL= 03h25`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
- * `180115 00h20` - html: improve layout
- * `180115 00h35` - html: input validation
+ * `180115 00h40` - html: improve layout
+ * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
 
 [TOC :arrow_double_up: ](#table-of-contents)

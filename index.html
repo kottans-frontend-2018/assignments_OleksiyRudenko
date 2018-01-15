@@ -161,6 +161,9 @@
                     <div>
                         <label for="user-name">Full name</label>
                         <input id="user-name" name="user-name" type="text" value=""
+                               autocomplete="cc-name"
+                               inputmode="latin-name"
+                               minlength="3"
                                maxlength="32"
                                pattern="[A-Za-z\s]{3,32}"
                                title="Only latin letters, as specified on your credit card"
@@ -169,12 +172,18 @@
                     <div>
                         <label for="user-email">Email address</label>
                         <input id="user-email" name="user-email" type="email" value=""
+                               autocomplete="email"
+                               inputmode="email"
+                               minlength="6"
                                maxlength="32"
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                                title="Must contain valid email address"
-                               placeholder="Your email address" required />
+                               placeholder="Your email address" required /><!-- inputmode arbitrary for type=="email" -->
                         <label for="user-password">Choose a password</label>
                         <input id="user-password" name="user-password" type="password" value=""
+                               autocomplete="current-password"
+                               inputmode="verbatim"
+                               minlength="8"
                                maxlength="32"
                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters (32 max)"
@@ -193,17 +202,22 @@
                     <div>
                         <label for="card-number">Card number</label>
                         <input id="card-number" name="card-number" type="text" value=""
+                               autocomplete="cc-number"
+                               inputmode="numeric"
                                maxlength="19" size="20"
                                pattern="[\d\s]{16,19}"
                                title="Must contain a valid card number"
                                placeholder="0000 0000 0000 0000" required />
                         <label for="card-expiry-date">Expiry date</label>
                         <input id="card-expiry-date" name="card-expiry-date" type="month" value="" min="" max=""
+                               autocomplete="cc-exp"
                                size="10"
                                title="Card should be valid at least over next 3 days"
                                required />
                         <label for="card-code">Code</label>
                         <input id="card-code" name="card-code" type="text" value=""
+                               autocomplete="cc-csc"
+                               inputmode="numeric"
                                maxlength="4" size="4"
                                pattern="[\d]{3,4}"
                                title="Must contain a valid CVV/CVV2 3- or 4-digit code"
