@@ -46,7 +46,7 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 03h25`
+ * `TOTAL= 03h45`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180115 00h40` - html: improve layout
