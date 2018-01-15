@@ -1,11 +1,27 @@
+body {
+    background-color: #eceef4;
+}
 
+footer {
+    background-color: #444a62;
+}
+
+main {
+    background-color: #fff;
+}
 
 /* === Logo ===
    Repaint BW logo.
    Source: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437
+   Color2filter conversion tool: https://codepen.io/sosuke/pen/Pjoqqp
 */
 
-.logo-light {
-    -webkit-filter: invert(80%) brightness(80%);
-    filter: invert(80%) brightness(80%);
+.logo-light { /* #dadde7 */
+    -webkit-filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
+    filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
+}
+
+.logo-dark { /* #383d50 */
+    -webkit-filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
+    filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
 }
