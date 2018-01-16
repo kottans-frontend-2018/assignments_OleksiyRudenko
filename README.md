@@ -28,6 +28,9 @@ This project's been developed while taking
  * Turn off CSS styling and check how your form looks and 
    if it is still usable.
  
+ [Mock-up decomposition](https://docs.google.com/presentation/d/1HmaVJSr-67Eu3OBkawoHJ112bMO5kv3B65d6eCb3Wlk/edit#slide=id.g2ee63ceef6_0_5)
+ _(private access)_
+ 
 ### Notes from mock-up author
  
  > The top panel (order summary + help) will be sticky and lively
@@ -56,10 +59,10 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 04h35`
+ * `TOTAL= 05h15`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
- * `180116 00h15` - mockup analysis
+ * `180116 00h55` - mockup analysis
  * `180115 00h40` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
