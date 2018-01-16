@@ -1,9 +1,28 @@
-/* ===========
-   = Colours =
-   =========== */
+/* ==================================
+   = Non-viewport dependant styling =
+   ================================== */
+
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #eceef4;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: #eceef4;
+    align-content: center;
+    color: #a5aac5;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    align-content: center;
+
 }
 
 footer {
@@ -13,6 +32,14 @@ footer {
 main {
     background-color: #fff;
 }
+
+a.button {
+    display: inline-flex;
+    text-decoration: none;
+    border-color: #c9d0e1;
+    border-style: solid;
+}
+
 
 /* === Logo ===
    Repaint BW logo.
@@ -30,12 +57,18 @@ main {
     filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
 }
 
-/* ==============
-   = Dimensions =
-   ============== */
+/* ======================
+   =     Dimensions     =
+   = main width = 768px =
+   ====================== */
 
 a.button {
-
+    width: 110px;
+    height: 35px;
+    min-width: 110px;
+    min-height: 35px;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 

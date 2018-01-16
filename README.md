@@ -59,7 +59,7 @@ This project's been developed while taking
  * `180115 00h40` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
- * `180115 00h20` - style: general
+ * `180115 00h50` - style: general
  * `180116 00h05` - misc (helpers, chores etc.) 
 
 [TOC :arrow_double_up: ](#table-of-contents)
