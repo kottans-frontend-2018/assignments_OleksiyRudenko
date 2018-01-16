@@ -40,6 +40,8 @@ This project's been developed while taking
  
  * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
    [Local README.md](fonts/proxima-nova/README.md)
+ * [Font Awesome](https://fontawesome.com/how-to-use/web-fonts-with-css)
+   for icons
    
 [TOC :arrow_double_up: ](#table-of-contents)
 
