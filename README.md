@@ -56,13 +56,13 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 03h50`
+ * `TOTAL= 04h20`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180115 00h40` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
- * `180115 00h50` - style: general
- * `180116 00h05` - misc (helpers, chores etc.) 
+ * `180115 01h00` - style: general
+ * `180116 00h20` - misc (helpers, chores etc.) 
 
 [TOC :arrow_double_up: ](#table-of-contents)
