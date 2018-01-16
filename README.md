@@ -8,13 +8,12 @@ This project's been developed while taking
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
-*generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [HTML5 Checkout Form Example](#html5-checkout-form-example)
-  - [The Task](#the-task)
-    - [Notes from mock-up author](#notes-from-mock-up-author)
-  - [Assets](#assets)
-  - [Time Track](#time-track)
+- [The Task](#the-task)
+  - [Notes from mock-up author](#notes-from-mock-up-author)
+- [Assets](#assets)
+- [Used Resources Reference](#used-resources-reference)
+- [Time Track](#time-track)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -43,6 +42,14 @@ This project's been developed while taking
    [Local README.md](fonts/proxima-nova/README.md)
    
 [TOC :arrow_double_up: ](#table-of-contents)
+
+## Used Resources Reference
+
+ * [Manage page styling](https://guides.codechewing.com/js/disable-enable-stylesheet-javascript)
+ * [Repainting PNG with CSS](https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437)
+   and a [tool](https://codepen.io/sosuke/pen/Pjoqqp) _(you may need recalc values several times to reach target accuracy)_
+
+[TOC :arrow_double_up: ](#table-of-contents)  
     
 ## Time Track
 
