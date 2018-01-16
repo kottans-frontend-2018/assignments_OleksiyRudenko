@@ -7,7 +7,7 @@
 </head>
 <body>
     <header id="page-header">
-        <img src="img/logo-black-black.png" width="101" height="101" class="logo-light" alt="WebApp logo" />
+        <img src="img/logo-black-black.png" width="101" height="101" class="logo-light" alt="WebApp logo" onclick="switchStyling();" />
         <nav>
             <ul>
                 <li><a href="#">Go back</a></li>
@@ -258,7 +258,7 @@
             </div>
         </div>
         <div>
-            <img src="img/logo-black-black.png" width="101" height="101" class="logo-dark" alt="WebApp logo" />
+            <img src="img/logo-black-black.png" width="101" height="101" class="logo-dark" alt="WebApp logo" onclick="switchStyling();" />
         </div>
     </footer>
     <script>
@@ -275,6 +275,13 @@
         let maxDate = new Date(today.getFullYear() + 5, today.getMonth(), today.getDate() + 3);
         e.max = maxDate.toJSON().slice(0,7);
       });
+
+      function switchStyling() {
+        const stylesheets = document.querySelector('[rel="stylesheet"]');
+        const stylesheet = stylesheets.sheet || stylesheets.styleSheet; // IE compatibility
+
+        stylesheet.disabled = ! stylesheet.disabled;
+      }
     </script>
 </body>
 </html>
