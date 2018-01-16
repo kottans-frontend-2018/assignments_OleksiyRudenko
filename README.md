@@ -39,7 +39,8 @@ This project's been developed while taking
 ## Assets
  
  * [Proxima Nova fonts by Mark Simonson](https://github.com/elliakou/proxima-nova-web-fonts) /
-   [Local README.md](fonts/proxima-nova/README.md)
+   [Local README.md](fonts/proxima-nova/README.md) (NB! There is a known issue re
+   `Proxima Nova Alt Regular.woff2` that results in non-critical error)
  * [Font Awesome](https://fontawesome.com/how-to-use/web-fonts-with-css)
    for icons
    
