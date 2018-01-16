@@ -277,10 +277,12 @@
       });
 
       function switchStyling() {
-        const stylesheets = document.querySelector('[rel="stylesheet"]');
-        const stylesheet = stylesheets.sheet || stylesheets.styleSheet; // IE compatibility
-
-        stylesheet.disabled = ! stylesheet.disabled;
+        const stylesheets = document.querySelectorAll('[rel="stylesheet"]');
+        let stylesheet = [];
+        for (let item of stylesheets) {
+          stylesheet.push(item.sheet || item.styleSheet); // IE compatibility
+        }
+        stylesheet.forEach(item => { item.disabled = ! item.disabled});
       }
     </script>
 </body>
