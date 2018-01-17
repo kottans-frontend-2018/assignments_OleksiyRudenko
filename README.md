@@ -59,14 +59,14 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 05h35`
+ * `TOTAL= 06h35`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180116 01h15` - mockup analysis (color map)
  * `180115 00h20` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
- * `180115 01h00` - style: general
+ * `180115 01h40` - style: general
  * `180116 00h20` - misc (helpers, chores etc.) 
 
 [TOC :arrow_double_up: ](#table-of-contents)

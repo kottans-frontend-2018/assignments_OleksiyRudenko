@@ -5,14 +5,14 @@
 html {
     padding: 0;
     margin: 0;
-    background-color: #eceef4;
+    background-color: #eceeff;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     align-content: center;
-    color: #a5aac5;
+    color: Red; /* c05 #a5abc5 */
     font-size: 100%;
     display: flex;
     flex-direction: column;
@@ -21,26 +21,61 @@ body {
     margin: 0;
 }
 
+/* --- Header --- */
+
 header {
     align-content: center;
 
 }
 
-footer {
-    background-color: #444a62;
+header a {
+    display: inline-flex;
+    color: #a5abc5;
+    text-decoration: none;
+    border-color: #c9d0e1; /* c02 */
+    border-style: solid;
 }
+
+/* --- Main --- */
 
 main {
     background-color: #fff;
 }
 
-a.button {
-    display: inline-flex;
-    text-decoration: none;
-    border-color: #c9d0e1;
-    border-style: solid;
+h3, h4, legend { /* c04 */
+    font-weight: bold;
+    color: #6e768f;
 }
 
+/* --- Footer --- */
+
+footer {
+    background-color: #383d50;
+    color: #b3b9d7; /* c24 */
+}
+
+footer h3 {
+    color: #c6ccea; /* c23 */
+}
+
+footer a:link, footer a:hover, footer a:visited, footer a:active {
+    color: #b3b9d7; /* c24 */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* === Semantical === */
+address {
+    font-style: normal;
+}
+
+aside {
+    border-color: #e6e8ee; /* c14 */
+    border-style: solid;
+}
 
 /* === Logo ===
    Repaint BW logo.
@@ -48,12 +83,12 @@ a.button {
    Color2filter conversion tool: https://codepen.io/sosuke/pen/Pjoqqp
 */
 
-.logo-light { /* #dadde7 */
+.logo-light { /* c03 #dadde7 */
     -webkit-filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
     filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
 }
 
-.logo-dark { /* #383d50 */
+.logo-dark { /* c25 #383d50 */
     -webkit-filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
     filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
 }
@@ -63,7 +98,11 @@ a.button {
    = main width = 768px =
    ====================== */
 
-a.button {
+/* --- General --- */
+
+/* --- header --- */
+
+header a {
     width: 110px;
     height: 35px;
     min-width: 110px;
@@ -71,6 +110,11 @@ a.button {
     border-radius: 5px;
     border-width: 1px;
 }
+
+/* --- Main --- */
+
+
+/* --- footer --- */
 
 
 /*==========  Mobile First Method  ==========*/
