@@ -54,6 +54,9 @@ This project's been developed while taking
  * [Manage page styling](https://guides.codechewing.com/js/disable-enable-stylesheet-javascript)
  * [Repainting PNG with CSS](https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437)
    and a [tool](https://codepen.io/sosuke/pen/Pjoqqp) _(you may need recalc values several times to reach target accuracy)_
+ * [How To Style A Checkbox With CSS](https://paulund.co.uk/style-checkboxes-with-css)
+ * [Custom radio button with rich content](https://codepen.io/adamstuartclark/pen/pbYVYR) 
+   // [more...](http://freefrontend.com/css-radio-buttons/) 
 
 [TOC :arrow_double_up: ](#table-of-contents)  
     
