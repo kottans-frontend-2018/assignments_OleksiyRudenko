@@ -5,6 +5,8 @@
 This project's been developed while taking
 [Kottans Frontend Course](https://github.com/kottans/frontend).
 
+[Check it out](https://oleksiyrudenko.github.io/html5-checkout-form/index.html)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
