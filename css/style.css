@@ -47,6 +47,16 @@ h3, h4, legend { /* c04 */
     color: #6e768f;
 }
 
+button span.invisible-text {
+    display: none;
+}
+
+button.frameless {
+    border: none;
+    background-color: rgba(175, 175, 175, 0);
+    cursor: pointer;
+}
+
 /* --- Footer --- */
 
 footer {
