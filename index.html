@@ -11,23 +11,24 @@
     <header id="page-header">
         <img src="img/logo-black-black.png" width="101" height="101" class="logo-light" alt="WebApp logo" onclick="switchStyling();" />
         <nav>
-            <a href="#" class="button">Go back</a>
-            <a href="#" class="button">Sign in</a>
+            <a href="#">Go back</a>
+            <a href="#">Sign in</a>
         </nav>
     </header>
     <main id="page-main">
         <div id="order-header">
             <div id="order-summary">
-                <h3>Your order</h3>
+                <i class="fas fa-clipboard" aria-hidden="true"></i>
+                <h3 class="text-title-c04">Your order</h3>
                 <div class="order-summary-details">
                     <ul>
-                        <li><div>Items</div>
+                        <li><h4>Items</h4>
                             <div>2 documents</div></li>
-                        <li><div>Details</div>
+                        <li><h4>Details</h4>
                             <div>2 languages</div></li>
-                        <li><div>Price</div>
+                        <li><h4>Price</h4>
                             <div>$ 696.06</div></li>
-                        <li><div>Delivery</div>
+                        <li><h4>Delivery</h4>
                             <div>48 hours*</div></li>
                     </ul>
                 </div>
@@ -37,6 +38,7 @@
                 </div>
             </div>
             <div id="help-center">
+                <i class="far fa-life-ring" aria-hidden="true"></i>
                 <h3 class="">Help center</h3>
                 <div>If you need assistance while placing your order, contact one of our beloved
                     Project Manager by phone or mail.
@@ -62,30 +64,36 @@
                     <legend>Upload your documents</legend>
                     <div>(Doc, Docx, Text, PDF, Markdown)</div>
                     <input type="file" name="file" value="Upload new file" />
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>File name</th>
-                                <th>File size</th>
-                                <th>Number of words</th>
-                                <th>Remove</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>business_operations.docx</td>
-                                <td>78kb</td>
-                                <td>842</td>
-                                <td><button>Remove</button></td>
-                            </tr>
-                            <tr>
-                                <td>business_financial.docx</td>
-                                <td>26kb</td>
-                                <td>2,326</td>
-                                <td><button>Remove</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <aside>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>File name</th>
+                                    <th>File size</th>
+                                    <th>Number of words</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-file-word" aria-hidden="true"></i>
+                                        business_operations.docx</td>
+                                    <td>78kb</td>
+                                    <td>842</td>
+                                    <td><button><i class="fas fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-file-word" aria-hidden="true"></i>
+                                        business_financial.docx</td>
+                                    <td>26kb</td>
+                                    <td>2,326</td>
+                                    <td><button><i class="fas fa-trash"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
                 </fieldset>
                 <fieldset id="form-section-languages">
                     <legend>Choose your language pairings</legend>
@@ -116,7 +124,7 @@
                             <option value="kur" selected>Kurdish</option>
                             <option value="ukr">Ukrainian</option>
                         </select>
-                        <button>Remove</button>
+                        <button><i class="fas fa-trash"></button>
 
                         <button>Add</button>
                     </div>
@@ -143,6 +151,7 @@
                             <label for="urgency-3">Yesterday</label></li>
                     </ul>
                     <aside>
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
                         <h3>Timeline info</h3>
                         <div>With an <strong>I got time</strong> timeline set up, our expert translator
                             will produce a perfect translation, and costs won't bite.
@@ -237,11 +246,13 @@
     </main>
     <footer id="page-footer">
         <div>
+            <i class="far fa-heart" aria-hidden="true"></i>
             <h3>What we do</h3>
             <div>We provide a full range of language services including content development,
                 document, website and social media accounts translations.</div>
         </div>
         <div>
+            <i class="far fa-compass" aria-hidden="true"></i>
             <h3>Our main office</h3>
             <address>
                 <p>Dubai, UAE</p>
@@ -250,11 +261,18 @@
             </address>
         </div>
         <div>
+            <i class="fas fa-share-alt" aria-hidden="true"></i>
             <h3>Connect with us</h3>
             <div>
-                <address><p><a href="#">Facebook</a></p></address>
-                <address><p><a href="#">Twitter</a></p></address>
-                <address><p><a href="#">Linkedin</a></p></address>
+                <address>
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    <p><a href="#">Facebook</a></p></address>
+                <address>
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                    <p><a href="#">Twitter</a></p></address>
+                <address>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <p><a href="#">Linkedin</a></p></address>
             </div>
         </div>
         <div>

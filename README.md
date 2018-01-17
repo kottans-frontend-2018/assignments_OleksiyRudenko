@@ -63,7 +63,7 @@ This project's been developed while taking
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180116 01h15` - mockup analysis (color map)
- * `180115 00h40` - html: improve layout
+ * `180115 00h20` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
  * `180115 01h00` - style: general
