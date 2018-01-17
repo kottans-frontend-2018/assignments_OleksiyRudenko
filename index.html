@@ -55,14 +55,26 @@
             <form>
                 <fieldset id="form-section-document-type">
                     <legend>Select what you want to translate</legend>
-                    <ul>
-                        <li><input type="radio" name="document-type" id="document-type-1" value="website" />
-                            <label for="document-type-1">Website</label></li>
-                        <li><input type="radio" name="document-type" id="document-type-2" value="documents" checked />
-                            <label for="document-type-2">Documents</label></li>
-                        <li><input type="radio" name="document-type" id="document-type-3" value="social-account" />
-                            <label for="document-type-3">Social Account</label></li>
-                    </ul>
+                    <section class="radio-row">
+                        <div>
+                            <input type="radio" name="document-type" id="document-type-1" value="website" />
+                            <label for="document-type-1" class="radio">
+                                <p>Website</p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="document-type" id="document-type-2" value="documents" checked />
+                            <label for="document-type-2" class="radio">
+                                <p>Documents</p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="document-type" id="document-type-3" value="social-account" />
+                            <label for="document-type-3" class="radio">
+                                <p>Social Account</p>
+                            </label>
+                        </div>
+                    </section>
                 </fieldset>
                 <fieldset id="form-section-upload">
                     <legend>Upload your documents</legend>

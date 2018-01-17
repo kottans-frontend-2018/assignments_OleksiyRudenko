@@ -57,8 +57,82 @@ button.frameless {
     cursor: pointer;
 }
 
-/* --- Standard UI controls */
-/* Source: https://paulund.co.uk/style-checkboxes-with-css */
+/* --- Standard UI controls --- */
+
+/* Radio */
+/* !!! dim >>> */
+section.radio-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+section > div {
+    flex: 1;
+    padding: 0.5rem;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:not(:disabled) ~ label {
+    cursor: pointer;
+}
+input[type="radio"]:disabled ~ label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, 1);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+label.radio {
+    height: 100%;
+    display: block;
+    background: #f7f7fa;
+    border: 1px solid #d7d8e0;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /* margin: 1rem; */
+    text-align: center;
+    /* box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5); */
+    position: relative;
+}
+input[type="radio"]:checked + label {
+    /* background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); */
+    /* box-shadow: 0px 0px 10px #76a7e1; */
+    border: 10px solid #76a7e1;
+}
+input[type="radio"]:checked + label::after {
+    color: #fff;
+    font-family: FontAwesome;
+    /* border: 10px solid #76a7e1; */
+    content: "\f00c";
+    font-size: 16px;
+    position: absolute;
+    top: -22px;
+    right: -13%;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: #76a7e1;
+    /* box-shadow: 0px 2px 5px -2px hsla(0, 0%, 0%, 0.25); */
+}
+/* input[type="radio"]#document-type-3:checked + label {
+    background: red;
+    border-color: red;
+} */
+label.radio p {
+    font-weight: 900;
+}
+@media only screen and (max-width: 700px) {
+    section.radio-row {
+        flex-direction: column;
+    }
+}
+/* <<< radio */
+
+/* Checkbox source: https://paulund.co.uk/style-checkboxes-with-css */
 /*
 input[type=checkbox] {
     visibility: hidden;
