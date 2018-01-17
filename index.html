@@ -162,14 +162,20 @@
                 </fieldset>
                 <fieldset id="form-section-tone">
                     <legend>Select your desired tone</legend>
-                    <ul>
-                        <li><input type="radio" name="address-tone" id="address-tone-1" value="friendly" />
-                            <label for="address-tone-1">Friendly / Casual</label></li>
-                        <li><input type="radio" name="address-tone" id="address-tone-2" value="corporate" checked />
-                            <label for="address-tone-2">Corporate / Pro</label></li>
-                        <li><input type="radio" name="address-tone" id="address-tone-3" value="formal" />
-                            <label for="address-tone-3">Media / Formal</label></li>
-                    </ul>
+                    <section class="radio-column">
+                        <div>
+                            <input type="radio" name="address-tone" id="address-tone-1" value="friendly" />
+                            <label for="address-tone-1" class="radio">Friendly / Casual</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="address-tone" id="address-tone-2" value="corporate" checked />
+                            <label for="address-tone-2" class="radio">Corporate / Pro</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="address-tone" id="address-tone-3" value="formal" />
+                            <label for="address-tone-3" class="radio">Media / Formal</label>
+                        </div>
+                    </section>
                 </fieldset>
                 <fieldset id="form-section-urgency">
                     <legend>Tell us how urgent this job is</legend>
@@ -232,14 +238,20 @@
                                placeholder="Password for your account with us" required />
                     </div>
                     <div>
-                        <ul>
-                            <li><input type="radio" name="payment-method" id="payment-method-1" value="credit-card" checked />
-                                <label for="payment-method-1">Credit card</label></li>
-                            <li><input type="radio" name="payment-method" id="payment-method-2" value="paypal" />
-                                <label for="payment-method-2">Paypal</label></li>
-                            <li><input type="radio" name="payment-method" id="payment-method-3" value="amazon" />
-                                <label for="payment-method-3">Amazon account</label></li>
-                        </ul>
+                        <section class="radio-row">
+                            <div>
+                                <input type="radio" name="payment-method" id="payment-method-1" value="credit-card" checked />
+                                <label for="payment-method-1" class="radio">Credit card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment-method" id="payment-method-2" value="paypal" />
+                                <label for="payment-method-2" class="radio">Paypal</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment-method" id="payment-method-3" value="amazon" />
+                                <label for="payment-method-3" class="radio">Amazon account</label>
+                            </div>
+                        </section>
                     </div>
                     <div>
                         <label for="card-number">Card number</label>

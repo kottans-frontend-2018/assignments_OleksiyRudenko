@@ -70,7 +70,15 @@ section.radio-row {
     display: flex;
     flex-flow: row wrap;
 }
-section > div {
+section.radio-row > div {
+    flex: 1;
+    padding: 0.5rem;
+}
+section.radio-column {
+    display: flex;
+    flex-flow: column;
+}
+section.radio-column > div {
     flex: 1;
     padding: 0.5rem;
 }
