@@ -57,6 +57,47 @@ button.frameless {
     cursor: pointer;
 }
 
+/* --- Standard UI controls */
+/* Source: https://paulund.co.uk/style-checkboxes-with-css */
+/*
+input[type=checkbox] {
+    visibility: hidden;
+}
+.checkbox {
+    position: relative;
+}
+.checkbox label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #70b0f0;
+    border-style: solid;
+    background-color: #7fbff5;
+}
+/* Display the tick inside the checkbox
+.checkbox label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-color: #333;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+/* Create the hover event of the tick
+.checkbox label:hover::after {
+    opacity: 0.5;
+}
+/* Create the checkbox state for the tick
+.checkbox input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+*/
+
 /* --- Footer --- */
 
 footer {
@@ -124,7 +165,29 @@ header a {
 /* --- Main --- */
 
 
+/* --- Standard UI controls */
+/*
+.checkbox {
+    width: 25px;
+    margin: 20px 100px;
+}
+.checkbox label {
+    width: 25px;
+    height: 25px;
+    border-width: 1px;
+}
+.checkbox label:after {
+    width: 9px;
+    height: 5px;
+    top: 6px;
+    left: 7px;
+    border-width: 3px;
+}
+*/
+
 /* --- footer --- */
+
+
 
 
 /*==========  Mobile First Method  ==========*/

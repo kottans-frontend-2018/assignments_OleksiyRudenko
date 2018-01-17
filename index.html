@@ -256,8 +256,11 @@
                 </fieldset>
                 <fieldset id="form-footer">
                     <div>
-                        <input id="tnc-consent" type="checkbox" checked />
-                        <label for="tnc-consent">I agree to the <a href="#">Terms & Conditions</a></label>
+                        <div class="checkbox">
+                            <input id="tnc-consent" value="tnc-accepted" type="checkbox" checked />
+                            <!-- label for="tnc-consent"></label -->
+                            <label for="tnc-consent">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
                     </div>
                     <input type="submit" value="Place order" />
                     <button>Print a quote</button>
