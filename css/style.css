@@ -42,7 +42,7 @@ main {
     background-color: #fff;
 }
 
-h3, h4, legend { /* c04 */
+h3, h4, legend, th { /* c04 */
     font-weight: bold;
     color: #6e768f;
 }
