@@ -62,7 +62,7 @@ main a.undecorated:hover {
     text-decoration: underline;
 }
 
-button span.invisible-text {
+span.invisible-text {
     display: none;
 }
 
@@ -153,6 +153,10 @@ label.radio {
     z-index: 1;
     border: 5px solid transparent;
     border-radius: 5px;
+}
+
+input[type=radio].custom-radio {
+    display: none;
 }
 
 input[type=radio].custom-radio:checked + .radio-item {
@@ -271,6 +275,16 @@ aside {
    ====================== */
 
 /* --- General --- */
+
+figure.img-resize {
+    /* display: inline-block; */
+    width: intrinsic;
+}
+
+img.img-resize {
+    width: 50%;
+    height: auto;
+}
 
 /* --- header --- */
 
