@@ -52,6 +52,18 @@ h3 i {
     margin-left: -30px;
 }
 
+main a {
+    color: inherit;
+}
+
+main a.undecorated {
+    text-decoration: none;
+}
+
+main a.undecorated:hover {
+    text-decoration: underline;
+}
+
 button span.invisible-text {
     display: none;
 }
