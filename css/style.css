@@ -109,9 +109,9 @@ label.radio {
 input[type="radio"]:checked + label {
     border: 10px solid #76a7e1;
 }
-input[type="radio"]:checked + label::after {
+input[type="radio"]:checked + label:after {
     color: #fff;
-    font-family: "FontAwesome 5 Solid";
+    font-family: FontAwesome;
     content: "\f00c";
     font-size: 16px;
     position: absolute;
