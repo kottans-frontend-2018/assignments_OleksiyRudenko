@@ -80,10 +80,12 @@ button.frameless {
     overflow: hidden;
     margin: 10px;
     background-color: #BDBDBD;
-    height: 100px;
+    height: 80px;
     width: 200px;
     text-align: center;
     border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .control-file-upload input.control-file-button {
     position: absolute;
@@ -99,6 +101,7 @@ button.frameless {
     text-align: center;
 }
 .control-file-label {
+    padding: 10px;
     font-family: arial;
     font-weight: bold;
     font-size: 16px;
@@ -313,8 +316,19 @@ figure.img-resize {
 }
 
 img.img-resize {
-    width: 50%;
+    width: auto;
+    max-width: 100%;
     height: auto;
+    object-fit: scale-down;
+}
+
+.icon-doctype {
+    width: 8em;
+}
+
+.icon-pmt-logo {
+    max-width: 5em;
+    max-height: 3em;
 }
 
 /* --- header --- */
