@@ -196,18 +196,24 @@
                 <fieldset id="form-section-tone">
                     <legend>Select your desired tone</legend>
                     <section class="radio-column">
-                        <div>
-                            <input type="radio" name="address-tone" id="address-tone-1" value="friendly" />
-                            <label for="address-tone-1" class="radio">Friendly / Casual</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="address-tone" id="address-tone-2" value="corporate" checked />
-                            <label for="address-tone-2" class="radio">Corporate / Pro</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="address-tone" id="address-tone-3" value="formal" />
-                            <label for="address-tone-3" class="radio">Media / Formal</label>
-                        </div>
+                        <label>
+                            <input type="radio" class="custom-radio" name="address-tone" id="address-tone-1" value="friendly" required />
+                            <span class="radio-item">
+                                    Friendly / Casual
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="address-tone" id="address-tone-2" value="corporate" required checked />
+                            <span class="radio-item">
+                                    Corporate / Pro
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="address-tone" id="address-tone-3" value="formal" required checked />
+                            <span class="radio-item">
+                                    Media / Formal
+                            </span>
+                        </label>
                     </section>
                 </fieldset>
                 <fieldset id="form-section-urgency">
