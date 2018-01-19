@@ -74,6 +74,8 @@ This project's been developed while taking
  * `180115 00h20` - style: logo
  * `180115 02h00` - style: general
  * `180117 02h00` - style: checkbox/radio restyling
+ * `180119 00h20` - style: file upload button
+    [source](https://codepen.io/OleksiyRudenko/pen/XVoVLe)
  * `180116 00h20` - misc (helpers, chores etc.) 
  * `180118 00h25` - imagery
 
