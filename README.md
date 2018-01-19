@@ -65,7 +65,7 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 09h30`
+ * `TOTAL= 09h50`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180116 01h15` - mockup analysis (color map)
@@ -73,7 +73,7 @@ This project's been developed while taking
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
  * `180115 02h00` - style: general
- * `180117 01h40` - style: checkbox/radio restyling
+ * `180117 02h00` - style: checkbox/radio restyling
  * `180116 00h20` - misc (helpers, chores etc.) 
  * `180118 00h25` - imagery
 

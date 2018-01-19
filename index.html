@@ -74,27 +74,33 @@
                 <fieldset id="form-section-document-type">
                     <legend>Select what you want to translate</legend>
                     <section class="radio-row">
-                        <div>
-                            <input type="radio" name="document-type" id="document-type-1" value="website" />
-                            <label for="document-type-1" class="radio">
-                                <span class="img-resize"><img src="img/doctype-1-ws.png" class="img-resize" /></span>
-                                <p>Website</p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="radio" name="document-type" id="document-type-2" value="documents" checked />
-                            <label for="document-type-2" class="radio">
-                                <span class="img-resize"><img src="img/doctype-2-doc.png" class="img-resize" /></span>
-                                <p>Documents</p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="radio" name="document-type" id="document-type-3" value="social-account" />
-                            <label for="document-type-3" class="radio">
-                                <span class="img-resize"><img src="img/doctype-3-social.png" class="img-resize" /></span>
-                                <p>Social Account</p>
-                            </label>
-                        </div>
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-1" value="website" required />
+                            <span class="radio-item">
+                                <figure class="img-resize">
+                                    <img src="img/doctype-1-ws.png" class="img-resize" title="Website" />
+                                </figure>
+                                Website
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-2" value="documents" required checked />
+                            <span class="radio-item">
+                                <figure class="img-resize">
+                                    <img src="img/doctype-2-doc.png" class="img-resize" title="Documents" />
+                                </figure>
+                                Documents
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-3" value="social-account" required />
+                            <span class="radio-item">
+                                <figure class="img-resize">
+                                    <img src="img/doctype-3-social.png" class="img-resize" title="Social Account" />
+                                </figure>
+                                Social Account
+                            </span>
+                        </label>
                     </section>
                 </fieldset>
                 <fieldset id="form-section-upload">
