@@ -110,7 +110,7 @@ button.frameless {
 
 /* Radio */
 /* !!! dim >>> */
-section.radio-row {
+/* section.radio-row {
     display: flex;
     flex-flow: row wrap;
 }
@@ -146,7 +146,7 @@ label.radio {
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
-    /* margin: 1rem; */
+    /* margin: 1rem;
     text-align: center;
     position: relative;
 }
@@ -170,13 +170,13 @@ input[type="radio"]:checked + label:after {
     background: #76a7e1;
 }
 label.radio {
-    /* font-weight: 900; */
+    /* font-weight: 900;
 }
 @media only screen and (max-width: 700px) {
     section.radio-row {
         flex-direction: column;
     }
-}
+} */
 /* <<< radio */
 
 
