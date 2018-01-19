@@ -13,8 +13,14 @@
         <img src="img/logo-black-black.png" width="101" height="101" class="logo-light" alt="WebApp logo" onclick="switchStyling();"
              title="Click me un-style/restyle page" />
         <nav>
-            <a href="#">Go back</a>
-            <a href="#">Sign in</a>
+            <a href="#">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                Go back
+            </a>
+            <a href="#">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                Sign in
+            </a>
         </nav>
     </header>
     <main id="page-main">
@@ -94,7 +100,7 @@
                 <fieldset id="form-section-upload">
                     <legend>Upload your documents</legend>
                     <div>(Doc, Docx, Text, PDF, Markdown)</div>
-                    <input type="file" name="file" value="Upload new file" />
+                    <input type="file" name="files[]" multiple value="Upload new file" accept="doc,docx" />
                     <aside>
                         <table>
                             <thead>
