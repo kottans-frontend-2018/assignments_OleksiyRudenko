@@ -9,7 +9,7 @@ element {
     /* horizontal */
     justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 
-    /* vertical against siblings */
+    /* vertical, children against siblings */
     align-items: flex-start | flex-end | center | baseline | stretch;
 
     /* vertical lines of children */
