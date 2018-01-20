@@ -603,6 +603,10 @@ header a {
 
 /* --- Main --- */
 
+main {
+    border-radius: 3px;
+}
+
 .block {
     padding: 10px 10px 10px 45px;
 }
