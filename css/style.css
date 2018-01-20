@@ -43,6 +43,7 @@ main {
 h3, h4, legend, th { /* c04 */
     font-weight: bold;
     color: #6e768f;
+    text-align: left;
 }
 
 h3 i {
@@ -76,9 +77,65 @@ button.frameless {
     display: flex;
     flex: 1;
     padding: 0;
+    justify-content: space-between;
+}
+
+#order-summary {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    border-bottom: 1px solid #c9d0e1;
+}
+
+#order-summary > div {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+}
+
+table {
+    width: 100%;
+}
+
+#order-summary-actions {
+    display: flex;
+    flex-flow: column;
+    flex: 0;
+    flex-shrink: 1;
+}
+
+#order-summary-actions div {
+    flex: 0;
+}
+
+#help-center {
+    flex: 0;
+    max-width: 235px;
+    min-width: 235px;
+    width: 235px;
+    border-left: 1px solid #c9d0e1;
+    border-bottom: 1px solid #c9d0e1;
 }
 
 /* --- Standard UI controls --- */
+
+input[type="submit"], button.form-action {
+    width: 115px;
+    height: 35px;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #5fcac6;
+    border: 1px solid #54aca9;
+    border-radius: 3px;
+}
+button.form-action {
+    color: #a5abc5;
+    background-color: #f7f7fa;
+    border: 1px solid #d7d8e0;
+    border-radius: 3px;
+}
+}
 
 /* input type=file */
 .control-file-upload {
