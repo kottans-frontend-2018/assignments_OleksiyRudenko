@@ -22,19 +22,21 @@ body {
 /* --- Header --- */
 
 header {
-    align-content: center;
     display: inline-flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     align-content: space-between;
+    width: 768px;
 }
 header img {
-    position: relative;
+    /* position: relative; */
 }
 .go-back {
+    flex: 1;
     order: -1;
 }
 
 .sign-in {
+    flex: 1;
     order: 99;
 }
 header a {
@@ -45,6 +47,7 @@ header a {
     border-style: solid;
     text-align: center;
     padding: 1em;
+    margin-top: auto;
 }
 
 /* --- Main --- */
