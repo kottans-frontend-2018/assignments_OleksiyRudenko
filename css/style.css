@@ -72,6 +72,12 @@ button.frameless {
     cursor: pointer;
 }
 
+#order-header {
+    display: flex;
+    flex: 1;
+    padding: 0;
+}
+
 /* --- Standard UI controls --- */
 
 /* input type=file */
@@ -109,6 +115,25 @@ button.frameless {
 }
 
 /* Radio */
+section.radio-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+section.radio-row > label {
+    display: flex;
+    flex: 1;
+    padding: 0;
+}
+section.radio-column {
+    display: flex;
+    flex-flow: column;
+}
+section.radio-column > label {
+    flex: 1;
+    padding: 0;
+}
 /* !!! dim >>> */
 /* section.radio-row {
     display: flex;
@@ -187,6 +212,20 @@ label.radio {
     z-index: 1;
     border: 5px solid transparent;
     border-radius: 5px;
+    flex: 1;
+}
+.radio-content {
+    z-index: 0;
+    margin: -3px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border: 1px solid #d7d8e0;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
 }
 
 input[type=radio].custom-radio {
@@ -196,13 +235,18 @@ input[type=radio].custom-radio {
 input[type=radio].custom-radio:checked + .radio-item {
     border: 5px solid #76a7e1;
     border-radius: 5px;
+    z-index: 1;
+}
+
+input[type=radio].custom-radio:checked + .radio-item .radio-content {
+    border-color: #76a7e1;
 }
 
 input[type=radio].custom-radio:checked + .radio-item:after {
     font-family: 'FontAwesome';
     content: "\f00c";
     position: absolute;
-    top: -8px;
+    top: -12px;
     right: -12px;
     color: #fff;
     font-size: 16px;
@@ -491,6 +535,15 @@ header a {
     border-width: 3px;
 }
 */
+
+.radio-tone {
+    min-width: 10em;
+}
+
+.radio-doctype {
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 /* === Semantical === */
 
