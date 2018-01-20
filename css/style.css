@@ -31,12 +31,18 @@ header {
 header div {
     /* position: relative; */
     flex: 0;
+    min-width: 110px;
+    min-height: 35px;
 }
 .go-back {
     order: -1;
+    width: 110px;
+    height: 35px;
 }
 .sign-in {
     order: 99;
+    width: 110px;
+    height: 35px;
 }
 header a {
     color: #a5abc5;
