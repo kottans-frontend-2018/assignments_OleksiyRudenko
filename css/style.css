@@ -23,15 +23,28 @@ body {
 
 header {
     align-content: center;
-
+    display: inline-flex;
+    align-items: flex-end;
+    align-content: space-between;
+}
+header img {
+    position: relative;
+}
+.go-back {
+    order: -1;
 }
 
+.sign-in {
+    order: 99;
+}
 header a {
-    display: inline-flex;
+    /* display: inline-flex; */
     color: #a5abc5;
     text-decoration: none;
     border-color: #c9d0e1; /* c02 */
     border-style: solid;
+    text-align: center;
+    padding: 1em;
 }
 
 /* --- Main --- */
@@ -142,11 +155,12 @@ button.form-action {
     position: relative;
     overflow: hidden;
     margin: 10px;
-    background-color: #BDBDBD;
-    height: 80px;
-    width: 200px;
+    background-color: #f7f7fa;
+    height: 3em;
+    width: 15em;
     text-align: center;
-    border-radius: 5px;
+    border: 1px solid #d7d8e0;
+    border-radius: 3px;
     display: table-cell;
     vertical-align: middle;
 }
