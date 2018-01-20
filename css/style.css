@@ -10,7 +10,7 @@ html {
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     align-content: center;
-    color: Red; /* c05 #a5abc5 */
+    color: #a5abc5; /* c05 #a5abc5 */
     font-size: 100%;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ span.invisible-text {
 }
 
 button.frameless {
+    color: #a5abc5;
     border: none;
     background-color: rgba(175, 175, 175, 0);
     cursor: pointer;
