@@ -29,6 +29,7 @@ header {
 }
 header img {
     /* position: relative; */
+    flex: 0;
 }
 .go-back {
     flex: 1;
@@ -293,13 +294,16 @@ label.radio {
     margin: -3px;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    padding-left: 1.5em;
     border: 1px solid #d7d8e0;
     border-radius: 5px;
-    text-align: center;
     /* justify-content: center;
     display: flex;
     flex-flow: column;
     flex: 1; */
+}
+.radio-content i {
+    padding-right: 0.5em;
 }
 
 input[type=radio].custom-radio {
@@ -662,7 +666,7 @@ main {
 */
 
 .radio-tone {
-    min-width: 10em;
+    min-width: 12em;
 }
 
 .radio-doctype {
