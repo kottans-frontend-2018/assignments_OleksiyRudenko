@@ -241,12 +241,22 @@
                 </fieldset>
                 <fieldset id="form-section-urgency">
                     <legend>Tell us how urgent this job is</legend>
-                    <input required type="range" name="urgency" class="urgency" min="0" max="100" step="50" value="50" list="urgency-tickmarks" />
-                    <datalist id="urgency-tickmarks">
-                        <option value="0" label="I got time"></option>
-                        <option value="50" label="Average" class="range-label-active range-label-selected"></option>
-                        <option value="100" label="Yesterday">Yesterday</option>
-                    </datalist>
+                    <div class="urgency-container">
+                        <div class="urgency-control">
+                            <input required type="range" name="urgency" class="urgency" min="0" max="100" step="50" value="50" list="urgency-tickmarks" />
+                            <datalist id="urgency-tickmarks">
+                                <option value="0" label="I got time"></option>
+                                <option value="50" label="Average" class="range-label-active range-label-selected"></option>
+                                <option value="100" label="Yesterday">Yesterday</option>
+                            </datalist>
+                        </div>
+                        <div class="urgency-labels">
+                            <div>I got time</div>
+                            <div class="range-label-active range-label-selected">Average</div>
+                            <div>Yesterday</div>
+                        </div>
+                    </div>
+
                     <!-- ul class="range-labels">
                         <li>I got time</li>
                         <li class="range-label-active range-label-selected">Average</li>

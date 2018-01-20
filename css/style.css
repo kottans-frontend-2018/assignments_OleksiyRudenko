@@ -391,9 +391,36 @@ input[type=checkbox] {
 
 /* input type=range */
 input[type=range].urgency {
+    position: relative;
     -webkit-appearance: none;
     width: 100%;
-    margin: 3px 0;
+    max-width: 300px;
+    margin: 3px;
+    padding: 0 10px;
+}
+input[type=range].urgency:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #d6d8e2;
+    margin-top: 12px;
+    margin-left: 1px;
+}
+input[type=range].urgency:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #d6d8e2;
+    margin-top: 12px;
+    margin-left: 290px;
 }
 input[type=range].urgency:focus {
     outline: none;
@@ -408,6 +435,8 @@ input[type=range].urgency::-webkit-slider-runnable-track {
     border: 0px solid #18d501;
 }
 input[type=range].urgency::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
     box-shadow: 0px 0px 0px #00aa00, 0px 0px 0px #00c300;
     border: 0px solid #83e584;
     height: 12px;
@@ -475,6 +504,23 @@ input[type=range].urgency:focus::-ms-fill-lower {
 input[type=range].urgency:focus::-ms-fill-upper {
     background: #eff0f5;
 }
+.urgency-container {
+    display: flex;
+    flex-flow: column;
+    max-width: 320px;
+}
+.urgency-container ~ div {
+    flex: 1;
+}
+.urgency-labels {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.urgency-labels ~ div {
+    flex: 1;
+}
+
 .range-labels {
     padding: 0;
     list-style: none;
