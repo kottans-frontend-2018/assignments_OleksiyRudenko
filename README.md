@@ -65,14 +65,14 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 10h50`
+ * `TOTAL= 12h50`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180116 01h15` - mockup analysis (color map)
  * `180115 00h50` - html: improve layout
  * `180115 00h50` - html: input validation
  * `180115 00h20` - style: logo
- * `180115 03h00` - style: general
+ * `180115 05h00` - style: general
  * `180117 02h00` - style: checkbox/radio restyling
  * `180119 00h20` - style: file upload button
     [source](https://codepen.io/OleksiyRudenko/pen/XVoVLe)
