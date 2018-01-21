@@ -183,6 +183,20 @@ table {
     padding-top: 1em;
 }
 
+#form-section-document-type legend {
+    text-align: center;
+    font-weight: 9pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d7d8e0;
+    padding: 0 1ex 1ex 1ex;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#form-section-document-type section {
+    margin: 0 40px 65px 40px;
+}
+
 /* --- Standard UI controls --- */
 
 input[type="submit"], button.form-action {
@@ -249,7 +263,7 @@ section.radio-row {
 section.radio-row > label {
     display: flex;
     flex: 1;
-    padding: 0;
+    margin: 10px;
 }
 section.radio-column {
     display: flex;
@@ -342,11 +356,11 @@ label.radio {
 .radio-content {
     z-index: 0;
     margin: -3px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    padding-left: 1.5em;
+    padding: 20px 0 20px 0;
     border: 1px solid #d7d8e0;
     border-radius: 5px;
+    font-size: 8pt;
+    font-weight: bold;
     /* justify-content: center;
     display: flex;
     flex-flow: column;
@@ -750,8 +764,15 @@ img.img-resize {
 }
 
 .radio-doctype {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.radio-doctype > span {
+    line-height: 24px;
 }
 
 /* === Semantical === */
