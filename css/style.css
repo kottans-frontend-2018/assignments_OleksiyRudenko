@@ -240,6 +240,10 @@ fieldset.counted > legend::before {
     padding-left: 45px;
 }
 
+strong {
+    color: #edbe76;
+}
+
 /* --- Standard UI controls --- */
 
 input[type="submit"], button.form-action {
@@ -695,20 +699,36 @@ select::-ms-expand {
 /* --- Footer --- */
 
 footer {
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #444a62; /* c22 */
     width: 100%;
     color: #b3b9d7; /* c24 */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 footer > div {
     width: 768px;
     max-width: 768px;
     display: flex;
     flex-flow: row wrap;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 footer > div > div {
+    font-size: 8pt;
     flex: 1;
+    padding-left: 20px;
+}
+
+footer div.shrink {
+    flex: 0;
+}
+
+footer p {
+    margin-bottom: 6pt;
 }
 
 footer h3 {
@@ -730,6 +750,7 @@ address {
 }
 
 aside {
+    font-size: 8pt;
     border-color: #e6e8ee; /* c14 */
     border-style: solid;
 }
