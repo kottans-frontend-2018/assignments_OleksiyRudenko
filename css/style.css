@@ -24,53 +24,74 @@ body {
 header {
     display: flex;
     flex-flow: row nowrap;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     justify-content: space-between;
     width: 768px;
+    max-width: 768px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-header div {
+header > div {
     /* position: relative; */
-    flex: 0;
-    min-width: 110px;
-    min-height: 35px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* min-width: 120px;
+    min-height: 35px; */
 }
 .go-back {
     order: -1;
-    width: 110px;
-    height: 35px;
 }
 .sign-in {
     order: 99;
-    width: 110px;
-    height: 35px;
 }
 header a {
+    font-size: 8pt;
     color: #a5abc5;
     text-decoration: none;
     border-color: #c9d0e1; /* c02 */
     border-style: solid;
     text-align: center;
-    padding: 1em;
-    margin-top: auto;
-
+    line-height: 35px;
     width: 110px;
     height: 35px;
     min-width: 110px;
     min-height: 35px;
     border-radius: 5px;
     border-width: 1px;
+    text-transform: uppercase;
+}
+
+header a i {
+    padding-right: 2ex;
 }
 
 /* --- Main --- */
 
 main {
+    border-radius: 3px;
+    width: 768px;
+    max-width: 768px;
     background-color: #fff;
+    font-size: 7pt;
 }
 
 h3, h4, legend, th { /* c04 */
     font-weight: bold;
     color: #6e768f;
     text-align: left;
+    font-size: 8pt;
+    padding-bottom: 10px;
+}
+
+h3, th {
+    text-transform: uppercase;
+}
+
+.block {
+    padding: 20px 30px 15px 45px;
 }
 
 h3 i {
@@ -101,23 +122,27 @@ button.frameless {
     cursor: pointer;
 }
 
-#order-header {
+#main-header {
     display: flex;
     flex: 1;
     padding: 0;
     justify-content: space-between;
 }
 
-#order-summary {
+#order {
     display: flex;
     flex-flow: row wrap;
     flex: 1;
     border-bottom: 1px solid #c9d0e1;
 }
 
-#order-summary > div {
+#order-summary {
     display: flex;
+    flex: 1;
     flex-flow: column;
+}
+
+#order-summary > div {
     flex: 1;
 }
 
@@ -125,24 +150,37 @@ table {
     width: 100%;
 }
 
-#order-summary-actions {
+#order-actions {
     display: flex;
     flex-flow: column;
     flex: 0;
     flex-shrink: 1;
+    align-content: space-between;
+    min-height: 75px;
 }
 
-#order-summary-actions div {
-    flex: 0;
+#order-actions > div {
+    /* flex: 0; */
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 6px;
 }
 
 #help-center {
     flex: 0;
-    max-width: 235px;
-    min-width: 235px;
-    width: 235px;
+    max-width: 155px;
+    min-width: 155px;
+    width: 155px;
     border-left: 1px solid #c9d0e1;
     border-bottom: 1px solid #c9d0e1;
+    text-align: justify;
+}
+
+#help-center address {
+    font-weight: bold;
+    color: #6e768f;
+    margin-right: 2ex;
+    padding-top: 1em;
 }
 
 /* --- Standard UI controls --- */
@@ -150,6 +188,8 @@ table {
 input[type="submit"], button.form-action {
     width: 115px;
     height: 35px;
+    font-size: 7pt;
+    text-transform: uppercase;
 }
 input[type="submit"] {
     color: #fff;
@@ -684,14 +724,6 @@ img.img-resize {
 
 /* --- Main --- */
 
-main {
-    border-radius: 3px;
-    width: 768px;
-}
-
-.block {
-    padding: 10px 10px 10px 45px;
-}
 
 /* --- Standard UI controls */
 /*
