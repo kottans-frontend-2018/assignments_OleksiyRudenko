@@ -17,6 +17,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
+    counter-reset: section;
 }
 
 /* --- Header --- */
@@ -96,7 +97,7 @@ h3, th {
 
 h3 i {
     position: absolute;
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 main a {
@@ -183,18 +184,35 @@ table {
     padding-top: 1em;
 }
 
+fieldset legend {
+    font-size: 10pt;
+}
+
 #form-section-document-type legend {
     text-align: center;
-    font-weight: 9pt;
+    font-size: 9pt;
+    letter-spacing: 0.5ex;
     text-transform: uppercase;
     border-bottom: 1px solid #d7d8e0;
-    padding: 0 1ex 1ex 1ex;
-    padding-top: 50px;
+    padding: 50px 1ex 1ex 1ex;
     margin-bottom: 50px;
 }
 
 #form-section-document-type section {
     margin: 0 40px 65px 40px;
+}
+
+fieldset.counted > legend::before {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    margin-left: -20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6e768f;
+    height: 20px;
+    width: 20px;
 }
 
 /* --- Standard UI controls --- */
