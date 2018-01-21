@@ -95,6 +95,11 @@ h3, th {
     padding: 20px 30px 15px 45px;
 }
 
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 h3 i {
     position: absolute;
     margin-left: -20px;
@@ -185,7 +190,14 @@ table {
 }
 
 fieldset legend {
+    font-size: 14pt;
+}
+
+legend span {
     font-size: 10pt;
+    color: #a5abc5;
+    margin-left: 2ex;
+    font-weight: normal;
 }
 
 #form-section-document-type legend {
@@ -202,6 +214,10 @@ fieldset legend {
     margin: 0 40px 65px 40px;
 }
 
+fieldset {
+    padding-bottom: 65px;
+}
+
 fieldset.counted > legend::before {
     counter-increment: section;
     content: counter(section);
@@ -213,6 +229,15 @@ fieldset.counted > legend::before {
     border-color: #6e768f;
     height: 20px;
     width: 20px;
+}
+
+#form-section-tone {
+    flex: 0;
+}
+
+#form-section-urgency {
+    flex: 1;
+    padding-left: 45px;
 }
 
 /* --- Standard UI controls --- */
@@ -256,7 +281,7 @@ button.form-action {
     right: 0;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 8pt;
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -265,10 +290,12 @@ button.form-action {
 }
 .control-file-label {
     padding: 10px;
-    font-family: arial;
     font-weight: bold;
-    font-size: 16px;
-    color:#585858;
+    font-size: 8pt;
+    color: #9fb0d4;
+}
+.control-file-label i {
+    margin-right: 1.5ex;
 }
 
 /* Radio */
@@ -778,7 +805,11 @@ img.img-resize {
 */
 
 .radio-tone {
-    min-width: 12em;
+    min-width: 16em;
+}
+
+.radio-tone div.radio-content {
+    padding-left: 2em;
 }
 
 .radio-doctype {
