@@ -840,17 +840,21 @@ footer > div {
 }
 
 footer > div > div {
+    padding-top: 3.75rem;
+}
+
+footer > div > div.text {
     font-size: 80%;
     flex: 1;
     padding-left: 1.5rem;
-    padding-top: 3.75rem;
-    max-width: 8rem;
-    min-width: 8rem;
+    max-width: 10rem;
+    min-width: 10rem;
     margin-right: 1rem;
 }
 
 footer div.shrink {
     flex: 0;
+    margin-right: 0;
 }
 
 footer p {
