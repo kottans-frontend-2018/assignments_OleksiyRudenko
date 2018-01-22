@@ -163,8 +163,8 @@
                 <fieldset id="form-section-languages" class="counted">
                     <legend>Choose your language pairings</legend>
                     <div>
-                        <div><label for="language-from">From</label></div>
-                        <div>
+                        <div class="lang-label"><label for="language-from">From</label></div>
+                        <div class="select-container">
                             <div><select id="language-from" name="language-from">
                                 <option value="ara">Arabic</option>
                                 <option value="eng" selected>English</option>
@@ -176,8 +176,8 @@
                         </div>
                     </div>
                     <div>
-                        <div><label for="language-to-1">To</label></div>
-                        <div>
+                        <div class="lang-label"><label for="language-to-1">To</label></div>
+                        <div class="select-container">
                             <select id="language-to-1" name="language-to-1">
                                 <option value="ara" selected>Arabic</option>
                                 <option value="eng">English</option>
@@ -188,18 +188,20 @@
                             <span class="select-control"><i class="fas fa-caret-down"></i></span>
                         </div>
                         <div>
-                            <select id="language-to-2" name="language-to-2">
-                                <option value="ara">Arabic</option>
-                                <option value="eng">English</option>
-                                <option value="deu">German</option>
-                                <option value="kur" selected>Kurdish</option>
-                                <option value="ukr">Ukrainian</option>
-                            </select>
-                            <span class="select-control"><i class="fas fa-caret-down"></i></span>
-                            <button class="frameless" title="Remove">
+                            <div class="select-container">
+                                <select id="language-to-2" name="language-to-2">
+                                    <option value="ara">Arabic</option>
+                                    <option value="eng">English</option>
+                                    <option value="deu">German</option>
+                                    <option value="kur" selected>Kurdish</option>
+                                    <option value="ukr">Ukrainian</option>
+                                </select>
+                                <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div><button class="frameless" title="Remove">
                                 <i class="fas fa-trash"></i>
                                 <span class="invisible-text">Remove</span>
-                            </button>
+                            </button></div>
                         </div>
                         <div>
                             <button class="add"><i class="fas fa-plus"></i> Add</button>

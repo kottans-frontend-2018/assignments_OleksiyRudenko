@@ -251,8 +251,7 @@ fieldset.counted > legend::before {
     align-items: center;
 }
 
-#form-section-languages > div > div {
-    position: relative;
+#form-section-languages div.lang-label {
     min-width: 6rem;
     text-transform: uppercase;
     text-align: right;
@@ -310,31 +309,39 @@ aside.timeline {
     line-height: 1.5rem;
     padding-left: 0.5ex;
     padding-right: 3ex;
+}
+
+.column input[type="text"]:required + label.validity,
+.column input[type="password"]:required + label.validity,
+.column input[type="email"]:required + label.validity {
+    display: inline-block;
+    position: relative;
     margin-right: 1rem;
 }
 
-.column input[type="text"]:required:invalid + label.validity:before,
-.column input[type="password"]:required:invalid + label.validity:before,
-.column input[type="email"]:required:invalid + label.validity:before {
-    display: block;
+
+.column input[type="text"]:required:invalid + label.validity::before,
+.column input[type="password"]:required:invalid + label.validity::before,
+.column input[type="email"]:required:invalid + label.validity::before {
     position: absolute;
     color: Red;
     font-family: 'FontAwesome';
     content: '\f057';
     font-size: 140%;
-    float: right;
+    margin-top: -0.7rem;
+    margin-left: -1.2rem;
 }
 
-.column input[type="text"]:required:valid + label.validity:before,
-.column input[type="password"]:required:valid + label.validity:before,
-.column input[type="email"]:required:valid + label.validity:before {
-    display: block;
+.column input[type="text"]:required:valid + label.validity::before,
+.column input[type="password"]:required:valid + label.validity::before,
+.column input[type="email"]:required:valid + label.validity::before {
     position: absolute;
     color: #76a7e1;
     font-family: 'FontAwesome';
     content: '\f058';
     font-size: 140%;
-    float: right;
+    margin-top: -0.7rem;
+    margin-left: -1.2rem;
 }
 
 /* .column input:invalid:after {
@@ -805,11 +812,14 @@ select {
     appearance: none;
     /* background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee; */
 }
+.select-container {
+    position: relative;
+}
 .select-control {
     position: absolute;
     float: right;
-    margin-left: -1rem;
-    margin-top: -1.5rem;
+    right: 1rem;
+    bottom: 1rem;
 }
 /* CAUTION: IE hackery ahead */
 select::-ms-expand {
