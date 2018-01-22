@@ -194,6 +194,7 @@ table {
 
 fieldset legend {
     font-size: 160%;
+    position: relative;
 }
 
 legend span {
@@ -227,12 +228,16 @@ fieldset.counted > legend::before {
     content: counter(section);
     position: absolute;
     margin-left: -1.2rem;
-    border-radius: 0.8rem;
-    border-width: 0.08rem;
+    border-radius: 50%;
+    border-width: 0.06rem;
     border-style: solid;
     border-color: #6e768f;
     height: 1.6rem;
     width: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    left: -1rem;
+    top: -0.25rem;
 }
 
 #form-section-languages {
