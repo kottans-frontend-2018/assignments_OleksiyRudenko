@@ -275,6 +275,16 @@ aside.timeline {
 
 }
 
+#form-footer > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+#form-footer > div > div {
+    margin-left: 1rem;
+}
+
 /* --- Standard UI controls --- */
 
 input[type="submit"], button.form-action {
