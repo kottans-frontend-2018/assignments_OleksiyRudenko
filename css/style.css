@@ -275,6 +275,81 @@ aside.timeline {
 
 }
 
+.row {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.column {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding-right: 1rem;
+}
+
+.column label.label {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.column input[type="text"],
+.column input[type="month"],
+.column input[type="password"],
+.column input[type="email"]
+{
+    position: relative;
+    border: 0.06rem solid #e6e8ee;
+    border-radius: 0.25rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding-left: 0.5ex;
+    padding-right: 3ex;
+    margin-right: 1rem;
+}
+
+.column input[type="text"]:required:invalid + label.validity:before,
+.column input[type="password"]:required:invalid + label.validity:before,
+.column input[type="email"]:required:invalid + label.validity:before {
+    display: block;
+    position: absolute;
+    color: Red;
+    font-family: 'FontAwesome';
+    content: '\f057';
+    font-size: 140%;
+    float: right;
+}
+
+.column input[type="text"]:required:valid + label.validity:before,
+.column input[type="password"]:required:valid + label.validity:before,
+.column input[type="email"]:required:valid + label.validity:before {
+    display: block;
+    position: absolute;
+    color: #76a7e1;
+    font-family: 'FontAwesome';
+    content: '\f058';
+    font-size: 140%;
+    float: right;
+}
+
+/* .column input:invalid:after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    float: right;
+} */
+
+div.payment-methods {
+    margin-top: 1rem;
+    width: 30rem;
+    max-width: 36rem;
+    min-width: 12rem;
+}
+
+div.payment-method {
+    padding: 2rem;
+}
+
 #form-footer > div {
     display: flex;
     flex-flow: row wrap;
@@ -352,7 +427,7 @@ button.add {
 .control-file-label {
     padding: 0.8rem;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 110%;
     color: #9fb0d4;
 }
 .control-file-label i {
