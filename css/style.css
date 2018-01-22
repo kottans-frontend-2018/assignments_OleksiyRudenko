@@ -11,7 +11,7 @@ body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     align-content: center;
     color: #a5abc5; /* c05 #a5abc5 */
-    font-size: 80%;
+    font-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,14 +49,14 @@ header > div {
     order: 99;
 }
 header a {
-    font-size: 0.6rem;
+    font-size: 100%;
     color: #a5abc5;
     text-decoration: none;
     border-color: #c9d0e1; /* c02 */
     border-style: solid;
     text-align: center;
     line-height: 2.25rem;
-    width: 7rem;
+    width: 8rem;
     height: 2.25rem;
     min-width: 7rem;
     min-height: 2.25rem;
@@ -76,15 +76,15 @@ main {
     width: 48rem;
     max-width: 48rem;
     background-color: #fff;
-    font-size: 0.7rem;
+    font-size: 70%;
 }
 
 h3, h4, legend, th { /* c04 */
     font-weight: bold;
     color: #6e768f;
     text-align: left;
-    font-size: 0.6rem;
-    padding-bottom: 0.6rem;
+    font-size: 100%;
+    padding-bottom: 1rem;
 }
 
 h3, th {
@@ -193,11 +193,11 @@ table {
 }
 
 fieldset legend {
-    font-size: 14pt;
+    font-size: 160%;
 }
 
 legend span {
-    font-size: 10pt;
+    font-size: 100%;
     color: #a5abc5;
     margin-left: 2ex;
     font-weight: normal;
@@ -205,7 +205,7 @@ legend span {
 
 #form-section-document-type legend {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 160%;
     letter-spacing: 0.5ex;
     text-transform: uppercase;
     border-bottom: 0.08rem solid #d7d8e0;
@@ -290,7 +290,7 @@ aside.timeline {
 input[type="submit"], button.form-action {
     width: 7rem;
     height: 2.25rem;
-    font-size: 0.6rem;
+    font-size: 100%;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -308,7 +308,7 @@ button.form-action {
     border-radius: 0.25rem;
 }
 button.add {
-    font-size: 80%;
+    font-size: 100%;
     text-transform: uppercase;
     background-color: #f7f7fa;
     height: 2rem;
@@ -342,7 +342,7 @@ button.add {
     right: 0;
     margin: 0;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 100%;
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -352,7 +352,7 @@ button.add {
 .control-file-label {
     padding: 0.8rem;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 100%;
     color: #9fb0d4;
 }
 .control-file-label i {
@@ -465,7 +465,7 @@ label.radio {
     padding: 1.6rem 0 1.6rem 0;
     border: 0.08rem solid #d7d8e0;
     border-radius: 0.25rem;
-    font-size: 0.8rem;
+    font-size: 120%;
     font-weight: bold;
     /* justify-content: center;
     display: flex;
@@ -497,7 +497,7 @@ input[type=radio].custom-radio:checked + .radio-item:after {
     top: -0.8rem;
     right: -0.8rem;
     color: #fff;
-    font-size: 1rem;
+    font-size: 100%;
     z-index: 2;
     line-height: 1.4rem;
     height: 1.4rem;
@@ -682,7 +682,7 @@ input[type=range].urgency:focus::-ms-fill-upper {
     width: 90.25px;
     text-align: center;
     color: #b2b2b2;
-    font-size: 1rem;
+    font-size: 100%;
     cursor: pointer;
 }
 .range-labels li::before {
@@ -717,7 +717,7 @@ select {
     background: #f7f7fa;
     min-width: 6rem;
     padding: 0.4rem 2rem 0.25rem 0.4rem;
-    font-size: 0.6rem;
+    font-size: 120%;
     /* border: 0.08rem solid Red; */
     height: 2rem;
     -webkit-appearance: none;
@@ -765,7 +765,7 @@ footer > div {
 }
 
 footer > div > div {
-    font-size: 0.8rem;
+    font-size: 80%;
     flex: 1;
     padding-left: 1.5rem;
     padding-top: 3.75rem;
@@ -805,7 +805,7 @@ address {
 }
 
 aside {
-    font-size: 0.8rem;
+    font-size: 100%;
     border-color: #e6e8ee; /* c14 */
     border-style: solid;
 }
