@@ -163,41 +163,47 @@
                 <fieldset id="form-section-languages" class="counted">
                     <legend>Choose your language pairings</legend>
                     <div>
-                        <label for="language-from">From</label>
-                        <select id="language-from" name="language-from">
-                            <option value="ara">Arabic</option>
-                            <option value="eng" selected>English</option>
-                            <option value="deu">German</option>
-                            <option value="kur">Kurdish</option>
-                            <option value="ukr">Ukrainian</option>
-                        </select>
-                        <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                        <div><label for="language-from">From</label></div>
+                        <div>
+                            <div><select id="language-from" name="language-from">
+                                <option value="ara">Arabic</option>
+                                <option value="eng" selected>English</option>
+                                <option value="deu">German</option>
+                                <option value="kur">Kurdish</option>
+                                <option value="ukr">Ukrainian</option>
+                            </select></div>
+                            <div class="select-control"><i class="fas fa-caret-down"></i></div>
+                        </div>
                     </div>
                     <div>
-                        <label for="language-to-1">To</label>
-                        <select id="language-to-1" name="language-to-1">
-                            <option value="ara" selected>Arabic</option>
-                            <option value="eng">English</option>
-                            <option value="deu">German</option>
-                            <option value="kur">Kurdish</option>
-                            <option value="ukr">Ukrainian</option>
-                        </select>
-                        <span class="select-control"><i class="fas fa-caret-down"></i></span>
-
-                        <select id="language-to-2" name="language-to-2">
-                            <option value="ara">Arabic</option>
-                            <option value="eng">English</option>
-                            <option value="deu">German</option>
-                            <option value="kur" selected>Kurdish</option>
-                            <option value="ukr">Ukrainian</option>
-                        </select>
-                        <span class="select-control"><i class="fas fa-caret-down"></i></span>
-                        <button class="frameless" title="Remove">
-                            <i class="fas fa-trash"></i>
-                            <span class="invisible-text">Remove</span>
-                        </button>
-
-                        <button>Add</button>
+                        <div><label for="language-to-1">To</label></div>
+                        <div>
+                            <select id="language-to-1" name="language-to-1">
+                                <option value="ara" selected>Arabic</option>
+                                <option value="eng">English</option>
+                                <option value="deu">German</option>
+                                <option value="kur">Kurdish</option>
+                                <option value="ukr">Ukrainian</option>
+                            </select>
+                            <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div>
+                            <select id="language-to-2" name="language-to-2">
+                                <option value="ara">Arabic</option>
+                                <option value="eng">English</option>
+                                <option value="deu">German</option>
+                                <option value="kur" selected>Kurdish</option>
+                                <option value="ukr">Ukrainian</option>
+                            </select>
+                            <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                            <button class="frameless" title="Remove">
+                                <i class="fas fa-trash"></i>
+                                <span class="invisible-text">Remove</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="add"><i class="fas fa-plus"></i> Add</button>
+                        </div>
                     </div>
                 </fieldset>
                 <div class="flex-row">

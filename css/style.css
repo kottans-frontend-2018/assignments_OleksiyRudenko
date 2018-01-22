@@ -235,6 +235,25 @@ fieldset.counted > legend::before {
     width: 1.6rem;
 }
 
+#form-section-languages {
+    display: flex;
+    flex-flow: column;
+}
+
+#form-section-languages > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#form-section-languages > div > div {
+    position: relative;
+    min-width: 6rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 1rem;
+}
+
 #form-section-tone {
     flex: 0;
 }
@@ -276,6 +295,20 @@ button.form-action {
     color: #a5abc5;
     background-color: #f7f7fa;
     border: 0.08rem solid #d7d8e0;
+    border-radius: 0.25rem;
+}
+button.add {
+    font-size: 80%;
+    text-transform: uppercase;
+    background-color: #f7f7fa;
+    height: 2rem;
+    width: 4.5rem;
+    text-align: center;
+    border: 0.08rem solid #d7d8e0;
+    color: #9fb0d4;
+    /* color: #a5abc5;
+    background-color: #f7f7fa;
+    border: 0.08rem solid #d7d8e0; */
     border-radius: 0.25rem;
 }
 
@@ -668,11 +701,11 @@ input[type=range].urgency:focus::-ms-fill-upper {
 /* select >>> */
 select {
     color: #9098b8;
-    margin: 3rem;
+    margin: 0.25rem;
     border: 0.08rem solid #d7d8e0;
     border-radius: 0.25rem;
     background: #f7f7fa;
-    width: 8rem;
+    min-width: 6rem;
     padding: 0.4rem 2rem 0.25rem 0.4rem;
     font-size: 0.6rem;
     /* border: 0.08rem solid Red; */
@@ -683,10 +716,10 @@ select {
     /* background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee; */
 }
 .select-control {
-    /* font-family: 'FontAwesome';
-    content: "\f00c"; */
-    position: relative;
-    margin-left: -4.5rem;
+    position: absolute;
+    float: right;
+    margin-left: -1rem;
+    margin-top: -1.5rem;
 }
 /* CAUTION: IE hackery ahead */
 select::-ms-expand {
