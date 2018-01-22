@@ -242,10 +242,18 @@ fieldset.counted > legend::before {
 #form-section-urgency {
     flex: 1;
     padding-left: 3rem;
+    max-width: 20rem;
 }
 
 strong {
     color: #edbe76;
+}
+
+aside.timeline {
+    margin-top: 2rem;
+    border: 0.06rem solid #e6e8ee;
+    border-radius: 0.25rem;
+
 }
 
 /* --- Standard UI controls --- */
