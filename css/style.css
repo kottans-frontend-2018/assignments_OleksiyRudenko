@@ -285,6 +285,13 @@ aside.timeline {
     flex-flow: row wrap;
 }
 
+.row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
 .column {
     display: flex;
     flex-flow: column;
@@ -358,8 +365,17 @@ div.payment-methods {
     min-width: 12rem;
 }
 
-div.payment-method {
-    padding: 2rem;
+.payment-method {
+    min-width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-method div.radio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form-footer > div {
