@@ -16,6 +16,7 @@ This project's been developed while taking
   - [Notes from mock-up author](#notes-from-mock-up-author)
 - [Assets](#assets)
 - [Used Resources Reference](#used-resources-reference)
+- [Validation](#validation)
 - [Time Track](#time-track)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -63,6 +64,13 @@ This project's been developed while taking
 
 [TOC :arrow_double_up: ](#table-of-contents)  
     
+## Validation
+
+ * [HTML5 validator](https://html5.validator.nu/?doc=https%3A%2F%2Foleksiyrudenko.github.io%2Fhtml5-checkout-form%2Findex.html&showimagereport=yes&showsource=yes)
+ * [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foleksiyrudenko.github.io%2Fhtml5-checkout-form%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+[TOC :arrow_double_up: ](#table-of-contents)  
+
 ## Time Track
 
  * `TOTAL= 19h45`
