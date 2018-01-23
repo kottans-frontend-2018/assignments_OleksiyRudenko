@@ -24,11 +24,11 @@ body {
 
 header {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-end;
     justify-content: space-between;
     width: 48rem;
-    max-width: 48rem;
+    max-width: 100%;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     margin-top: 2.5rem;
