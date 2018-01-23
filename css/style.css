@@ -317,6 +317,14 @@ aside.timeline {
     padding-right: 3ex;
 }
 
+.column input[type="text"]::placeholder,
+.column input[type="month"]::placeholder,
+.column input[type="password"]::placeholder,
+.column input[type="email"]::placeholder {
+    color: #b5bbd5;
+    font-size: 80%;
+}
+
 .column input[type="text"]:required + label.validity,
 .column input[type="password"]:required + label.validity,
 .column input[type="email"]:required + label.validity {
