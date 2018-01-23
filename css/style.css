@@ -335,8 +335,8 @@ aside.timeline {
     font-weight: 900;
     content: '\f057';
     font-size: 140%;
-    margin-top: -0.7rem;
-    margin-left: -1.2rem;
+    right: 0.4rem;
+    top: -0.7rem;
 }
 
 .column input[type="text"]:required:valid + label.validity::before,
@@ -348,8 +348,8 @@ aside.timeline {
     font-weight: 900;
     content: '\f058';
     font-size: 140%;
-    margin-top: -0.7rem;
-    margin-left: -1.2rem;
+    right: 0.4rem;
+    top: -0.7rem;
 }
 
 /* .column input:invalid:after {
