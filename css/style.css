@@ -198,7 +198,7 @@ fieldset legend {
 }
 
 legend span {
-    font-size: 100%;
+    font-size: 0.8rem;
     color: #a5abc5;
     margin-left: 2ex;
     font-weight: normal;
