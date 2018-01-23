@@ -331,7 +331,8 @@ aside.timeline {
 .column input[type="email"]:required:invalid + label.validity::before {
     position: absolute;
     color: Red;
-    font-family: 'FontAwesome';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
     content: '\f057';
     font-size: 140%;
     margin-top: -0.7rem;
@@ -343,7 +344,8 @@ aside.timeline {
 .column input[type="email"]:required:valid + label.validity::before {
     position: absolute;
     color: #76a7e1;
-    font-family: 'FontAwesome';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
     content: '\f058';
     font-size: 140%;
     margin-top: -0.7rem;
@@ -594,7 +596,8 @@ input[type=radio].custom-radio:checked + .radio-item .radio-content {
 }
 
 input[type=radio].custom-radio:checked + .radio-item:after {
-    font-family: 'FontAwesome';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
     content: "\f00c";
     position: absolute;
     top: -0.8rem;
