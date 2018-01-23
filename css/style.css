@@ -371,8 +371,9 @@ div.payment-methods {
     align-items: center;
 }
 
-.payment-method div.radio-content {
+span.payment-method div.radio-content {
     display: flex;
+    min-height: 1.5rem;
     justify-content: center;
     align-items: center;
 }
