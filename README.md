@@ -65,7 +65,7 @@ This project's been developed while taking
     
 ## Time Track
 
- * `TOTAL= 18h50`
+ * `TOTAL= 19h45`
  * `180114 00h10` - setup
  * `180114 01h25` - initialize `index.html`
  * `180116 01h15` - mockup analysis (color map)
@@ -78,5 +78,6 @@ This project's been developed while taking
     [source](https://codepen.io/OleksiyRudenko/pen/XVoVLe)
  * `180116 00h20` - misc (helpers, chores etc.) 
  * `180118 00h25` - imagery
+ * `180123 00h55` - bugfixes
 
 [TOC :arrow_double_up: ](#table-of-contents)
