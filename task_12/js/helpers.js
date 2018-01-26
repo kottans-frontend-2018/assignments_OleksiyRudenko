@@ -1,9 +1,11 @@
+const LOCALE = getLocale();
+
 /**
  * Updates current time display
  * @param clockElement
  */
 function updateClock(clockElement) {
-  clockElement.innerHTML = new Date().toLocaleTimeString(getLocale());
+  clockElement.innerHTML = new Date().toLocaleTimeString(LOCALE);
 }
 
 /**
