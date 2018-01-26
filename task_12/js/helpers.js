@@ -1,5 +1,5 @@
 function updateClock(clock) {
-  clock.innerHTML = new Date().toLocaleTimeString();
+  clock.innerHTML = new Date().toLocaleTimeString(getLang());
 }
 
 function initializeClock() {
@@ -13,4 +13,11 @@ function initializeClock() {
 function setCopyYear() {
   const copyYearElement = document.getElementById("copy-year");
   copyYearElement.innerText = new Date().getFullYear();
+}
+
+function getLang() {
+  if (navigator.languages != undefined)
+    return navigator.languages[0];
+  else
+    return navigator.language;
 }
