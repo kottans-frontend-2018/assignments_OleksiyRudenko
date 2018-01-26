@@ -8,54 +8,70 @@ body {
 
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-
 
     color: #333;
     font-size: 120%;
     padding: 0;
     margin: 0;
+
+    min-height: 100vh;
 }
 
-header, main, footer {
-    display: flex;
-    width: 48rem;
-    min-width: 16rem;
+div.app {
+    min-height: 100%;
     max-width: 48rem;
-    padding: 1em;
+    min-width: 16rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+main, footer, nav {
+    display: flex;
+    padding: 1rem;
 }
 
 header, footer {
-    flex-flow: row wrap;
-    background-color: #333;
-    color: #aaa;
+    flex: none;
 }
 
 header {
-    z-index: 1;
-    position: fixed;
-    height: 5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+nav {
+    background-color: #333;
+    color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
 footer {
-    z-index: 1;
-    position: fixed;
-    justify-content: space-between;
+    background-color: #333;
+    color: #aaa;
     font-size: 0.8rem;
-    height: 2.5rem;
     line-height: 2rem;
     bottom: 0;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 main {
-    padding-top: 8rem;
-    padding-bottom: 2.5rem;
-    height: 100%;
-    flex-flow: column;
+    flex: 1;
     background-color: #aaa;
-    overflow: scroll;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    /* align-content: stretch; */
 }
 
 /* === COMMONS === */
@@ -64,6 +80,10 @@ main {
     border: 0.06rem solid #333;
     border-radius: 0.25rem;
     text-align: center;
+    margin: 0.5rem;
+}
+.button i {
+    margin-right: 0.5rem;
 }
 
 a {
@@ -78,14 +98,20 @@ a.undecorated:hover {
     text-decoration: underline;
 }
 
+button.add-pizza {
+    line-height: 3rem;
+}
+
 address {
     font-style: normal;
+    margin-right: 1rem;
 }
 
 /* === HEADER === */
 
 .clock {
     font-family: 'Overpass Mono', monospace;
+    text-transform: full-width;
 }
 
 .header-block {
@@ -93,10 +119,55 @@ address {
     height: 3rem;
     line-height: 3rem;
     border: 0.06rem solid transparent;
+    margin: 0.5rem;
 }
 
 .header-button {
     border-color: #aaa;
+    background-color: #333;
+    color: #aaa;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #eee;
+    box-shadow: 0 0 0.8rem #eee;
+}
+
+img.logo {
+    height: 3rem;
+}
+
+#logo {
+    order: 2;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#current-time { order: 1; }
+#signin { order: 99; }
+
+div.add-pizza {
+    flex: 1;
+    background-color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.add-pizza button {
+    min-width: 12rem;
+    line-height: 3rem;
+}
+
+div.add-pizza button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #0ff;
+    box-shadow: 0 0 0.8rem #0ff;
 }
 
 /* === FOOTER === */
@@ -108,5 +179,82 @@ address {
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
+/* === MAIN === */
+/* --- pizza --- */
+div.pizza-container {
+    flex: 1;
+
+    font-size: 0.9rem;
+    max-width: 12rem;
+    background-color: #eee;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+div.pizza-header {
+    position: relative;
+    margin: 0.5rem 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.pizza-footer {
+    margin: 0.5rem 0.5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.pizza-image {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.pizza-image img {
+    max-width: 10rem;
+    height: auto;
+}
+
+div.pizza-name {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0 0.25rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.pizza-timing, div.pizza-props {
+    display: flex;
+    flex-flow: column;
+}
+
+div.pizza-timing {
+    margin-right: 1.5rem;
+}
+
+div.pizza-props {
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+div.pizza-timing > div, div.pizza-props > div {
+    line-height: 1.5rem;
+}
+
 
 
