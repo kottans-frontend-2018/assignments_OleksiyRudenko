@@ -1,0 +1,112 @@
+html {
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Georgia, sans-serif;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+
+
+    color: #333;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+}
+
+header, main, footer {
+    display: flex;
+    width: 48rem;
+    min-width: 16rem;
+    max-width: 48rem;
+    padding: 1em;
+}
+
+header, footer {
+    flex-flow: row wrap;
+    background-color: #333;
+    color: #aaa;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+footer {
+    z-index: 1;
+    position: fixed;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    line-height: 2rem;
+    bottom: 0;
+}
+
+main {
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+    height: 100%;
+    flex-flow: column;
+    background-color: #aaa;
+    overflow: scroll;
+}
+
+/* === COMMONS === */
+
+.button {
+    border: 0.06rem solid #333;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+}
+
+a.undecorated {
+    text-decoration: none;
+}
+
+a.undecorated:hover {
+    text-decoration: underline;
+}
+
+address {
+    font-style: normal;
+}
+
+/* === HEADER === */
+
+.clock {
+    font-family: 'Overpass Mono', monospace;
+}
+
+.header-block {
+    width: 11rem;
+    height: 3rem;
+    line-height: 3rem;
+    border: 0.06rem solid transparent;
+}
+
+.header-button {
+    border-color: #aaa;
+}
+
+/* === FOOTER === */
+.footer-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+

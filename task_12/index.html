@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp - Order Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.4/css/all.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/helpers.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="current-time" class="clock header-block"></div>
+        <div id="logo"></div>
+        <div id="signin" class="button header-block header-button">
+            <a href="#" class="undecorated">Sign In</a>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <address>Kottans, Kottans Str.1
+                    tel: <a href="tel:57778887" class="undecorated">577-788-87</a>
+                </address>
+            </div>
+            <div>
+                Pizza Manager &copy; <span id="copy-year">2018</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        initializeClock();
+        setCopyYear();
+      });
+    </script>
+
+</body>
+</html>
