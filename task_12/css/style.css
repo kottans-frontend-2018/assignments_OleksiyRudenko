@@ -171,8 +171,8 @@ div.add-pizza button {
 div.add-pizza button:hover {
     cursor: pointer;
     outline: none;
-    border-color: #0ff;
-    box-shadow: 0 0 0.8rem #0ff;
+    border-color: #f30;
+    box-shadow: 0 0 0.8rem #f30;
 }
 
 /* === FOOTER === */
