@@ -48,3 +48,15 @@ function timeMs2Time(milliseconds) {
   seconds %= 60;
   return minutes + ':' + (seconds < 10 ? '0'+seconds : seconds);
 }
+
+/**
+ * Hides pizza container on click
+ * @param e
+ */
+function hidePizzaContainer(e) {
+  const target = e.path.find(element => element.className === 'pizza-container');
+  if (target) {
+    const targetEta = target.querySelector('.pizza-eta');
+    targetEta && targetEta.innerText === 'READY' && (target.style.display = 'none');
+  }
+}
