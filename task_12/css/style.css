@@ -4,6 +4,10 @@ html {
     height: 100%;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Open Sans', Georgia, sans-serif;
 
@@ -74,7 +78,7 @@ main {
     background-color: #aaa;
 
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: stretch;
     /* align-content: stretch; */
 }
@@ -191,7 +195,10 @@ div.pizza-container {
     flex: 1;
 
     font-size: 0.9rem;
-    max-width: 12rem;
+    width: calc(33.33% - 1rem);
+    /* max-width: 16rem; /* was 16rem */
+    min-width: 12rem;
+    max-height: 18rem;
     background-color: #eee;
     border-radius: 0.25rem;
     margin: 0.5rem;
@@ -201,6 +208,7 @@ div.pizza-container {
     flex-flow: column;
     justify-content: flex-start;
     align-items: stretch;
+    justify-items: stretch;
 }
 
 div.pizza-header {
