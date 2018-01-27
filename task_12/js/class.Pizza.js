@@ -17,9 +17,11 @@ class Pizza {
 
   updateTiming(now) {
     const diffMilliseconds = this.props.readyBy.getTime() - now.getTime();
-    this.elements.eta.innerText =
-      (diffMilliseconds < 1000)
-        ? 'READY'
-        : 'ETA: ' + timeMs2Time(this.props.readyBy.getTime() - now.getTime());
+    if (diffMilliseconds < 1000) {
+      this.elements.eta.innerText = 'READY';
+      this.elements.eta.classList.add('pizza-ready');
+    } else {
+      this.elements.eta.innerText = 'ETA: ' + timeMs2Time(this.props.readyBy.getTime() - now.getTime());
+    }
   }
 }

@@ -256,5 +256,8 @@ div.pizza-timing > div, div.pizza-props > div {
     line-height: 1.5rem;
 }
 
+div.pizza-ready {
+    color: Red;
+}
 
 
