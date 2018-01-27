@@ -145,8 +145,9 @@ button.frameless {
 
 #order-summary {
     display: flex;
-    flex: 1;
+    flex: 4;
     flex-flow: column;
+    margin-bottom: 0.5rem;
 }
 
 #order-summary > div {
@@ -157,20 +158,20 @@ table {
     width: 100%;
 }
 
-#order-actions {
+.order-actions {
+    flex: 1 0;
     display: flex;
-    flex-flow: column;
-    flex: 0;
-    flex-shrink: 1;
-    align-content: space-between;
-    min-height: 5rem;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
-#order-actions > div {
+.order-actions > div {
     /* flex: 0; */
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    /* margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+    padding-right: 0.5rem; */
 }
 
 #help-center {
