@@ -17,6 +17,8 @@ This project's been developed while taking
 - [Assets](#assets)
 - [Used Resources Reference](#used-resources-reference)
 - [Validation](#validation)
+- [Snippets](#snippets)
+  - [Skipped Radio Groups](#skipped-radio-groups)
 - [Time Track](#time-track)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -70,6 +72,30 @@ This project's been developed while taking
  * [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foleksiyrudenko.github.io%2Fhtml5-checkout-form%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 [TOC :arrow_double_up: ](#table-of-contents)  
+
+## Snippets
+
+### Skipped Radio Groups
+
+Stylized radio buttons where inputs
+are hidden are out of keyboard
+navigation loop.
+
+Solution:
+```css
+    .visually-hidden {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
+```
+
+[TOC :arrow_double_up: ](#table-of-contents)
 
 ## Time Track
 
