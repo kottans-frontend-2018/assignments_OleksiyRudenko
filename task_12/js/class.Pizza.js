@@ -1,11 +1,9 @@
 class Pizza {
   constructor(id, dateTimeOrdered, preparationDurationMinutes) {
-    this.id = id;
     this.elements = {
       orderedAt: document.getElementById('pizza-' + id + '-orderedAt'),
       eta: document.getElementById('pizza-' + id + '-eta'),
     };
-    console.log(this.elements);
     const readyBy = new Date();
     readyBy.setTime(dateTimeOrdered.getTime() + preparationDurationMinutes * 60 * 1000),
     this.props = {
