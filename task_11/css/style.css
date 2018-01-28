@@ -718,6 +718,12 @@ select {
 .select-container {
     position: relative;
 }
+select:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
 .select-control {
     position: absolute;
     float: right;
