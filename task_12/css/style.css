@@ -268,7 +268,7 @@ div.pizza-props {
     align-items: flex-end;
 }
 
-div.pizza-timing > div, div.pizza-props > div {
+div.pizza-timing > *, div.pizza-props > div {
     line-height: 1.5rem;
 }
 
