@@ -1,7 +1,7 @@
 class PizzaSet {
   constructor(pizzaCount) {
     this.pizzaSet = [];
-    let date = new Date();
+    let date = new DateX();
     date.setTime(date.getTime() - (4 * 60 + 50) * 1000 );
     for (let i=0; i < pizzaCount; i++) {
       date.setTime(date.getTime() + i*25*1000);

@@ -10,6 +10,7 @@ class Pizza {
       readyBy: readyBy,
     };
     this.elements.orderedAt.innerText = dateTimeOrdered.toLocaleTimeString(LOCALE);
+    this.elements.orderedAt.setAttribute('datetime',dateTimeOrdered.getYMDHM());
     this.updateTiming(new Date());
   }
 
