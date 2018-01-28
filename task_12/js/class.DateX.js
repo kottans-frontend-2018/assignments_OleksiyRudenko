@@ -57,7 +57,7 @@ class DateX extends Date {
   }
 
   getHM() {
-    return `${this.getHours()}:${this.getMinutes()}}`;
+    return `${this.getHours()}:${this.getMinutes()}`;
   }
 
   getYMDHM() {
