@@ -801,6 +801,14 @@ aside {
     border-style: solid;
 }
 
+/* === Commons === */
+button:hover, input[type=submit]:hover, header a:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
+
 /* === Logo ===
    Repaint BW logo.
    Source: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437
