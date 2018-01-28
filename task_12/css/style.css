@@ -32,8 +32,6 @@ div.app {
 
     display: flex;
     flex-flow: column;
-    /* justify-content: center;
-    align-items: stretch; */
 }
 
 main, footer, nav {
@@ -79,8 +77,6 @@ main {
 
     flex-flow: row wrap;
     justify-content: flex-start;
-    /* align-items: stretch; */
-    /* align-content: stretch; */
 }
 
 /* === COMMONS === */
@@ -196,7 +192,7 @@ div.pizza-container {
 
     font-size: 0.9rem;
     width: calc(33.33% - 1rem);
-    /* max-width: 16rem; /* was 16rem */
+    /* max-width: 16rem; */
     min-width: 12rem;
     max-height: 18rem;
     background-color: #eee;
@@ -207,8 +203,6 @@ div.pizza-container {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    /* align-items: stretch; */
-    /* justify-items: stretch; */
 }
 
 div.pizza-placeholder {
