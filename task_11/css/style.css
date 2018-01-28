@@ -499,6 +499,12 @@ section.radio-column > label {
     font-size: 120%;
     font-weight: bold;
 }
+.radio-content:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
 .radio-content i {
     padding-right: 0.5em;
 }
