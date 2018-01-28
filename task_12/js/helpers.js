@@ -5,7 +5,9 @@ const LOCALE = getLocale();
  * @param clockElement
  */
 function updateClock(clockElement) {
-  clockElement.innerHTML = new Date().toLocaleTimeString(LOCALE);
+  const now = new DateX();
+  clockElement.innerHTML = now.toLocaleTimeString(LOCALE);
+  clockElement.setAttribute('datetime', now.getYMDHM());
 }
 
 /**
