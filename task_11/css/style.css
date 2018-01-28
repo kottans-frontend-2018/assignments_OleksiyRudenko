@@ -168,10 +168,7 @@ table {
 }
 
 .order-actions > div {
-    /* flex: 0; */
-    /* margin-top: 0.5rem;
-    margin-bottom: 0.5rem; */
-    padding-right: 0.5rem; */
+    padding-right: 0.5rem;
 }
 
 #help-center {
@@ -361,13 +358,6 @@ aside.timeline {
     top: -0.7rem;
 }
 
-/* .column input:invalid:after {
-    position: absolute;
-    font-family: 'FontAwesome';
-    content: "\f00c";
-    float: right;
-} */
-
 div.payment-methods {
     margin-top: 1rem;
     width: 30rem;
@@ -430,9 +420,6 @@ button.add {
     text-align: center;
     border: 0.08rem solid #d7d8e0;
     color: #9fb0d4;
-    /* color: #a5abc5;
-    background-color: #f7f7fa;
-    border: 0.08rem solid #d7d8e0; */
     border-radius: 0.25rem;
 }
 
@@ -493,76 +480,6 @@ section.radio-column > label {
     flex: 1;
     padding: 0;
 }
-/* !!! dim >>> */
-/* section.radio-row {
-    display: flex;
-    flex-flow: row wrap;
-}
-section.radio-row > div {
-    flex: 1;
-    padding: 0.5rem;
-}
-section.radio-column {
-    display: flex;
-    flex-flow: column;
-}
-section.radio-column > div {
-    flex: 1;
-    padding: 0.5rem;
-}
-input[type="radio"] {
-    display: none;
-}
-input[type="radio"]:not(:disabled) ~ label {
-    cursor: pointer;
-}
-input[type="radio"]:disabled ~ label {
-    color: #ccc;
-    border-color: #d7d8e0;
-    box-shadow: none;
-    cursor: not-allowed;
-}
-label.radio {
-    height: 100%;
-    display: block;
-    background: #f7f7fa;
-    border: 1px solid #d7d8e0;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    /* margin: 1rem;
-    text-align: center;
-    position: relative;
-}
-input[type="radio"]:checked + label {
-    border: 10px solid #76a7e1;
-}
-input[type="radio"]:checked + label:after {
-    color: #fff;
-    font-family: FontAwesome;
-    content: "\f00c";
-    font-size: 16px;
-    position: absolute;
-    top: -22px;
-    right: -35px;
-    transform: translateX(-50%);
-    height: 35px;
-    width: 35px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 50%;
-    background: #76a7e1;
-}
-label.radio {
-    /* font-weight: 900;
-}
-@media only screen and (max-width: 700px) {
-    section.radio-row {
-        flex-direction: column;
-    }
-} */
-/* <<< radio */
-
 
 /* radio better >>> */
 .radio-item {
@@ -581,10 +498,6 @@ label.radio {
     border-radius: 0.25rem;
     font-size: 120%;
     font-weight: bold;
-    /* justify-content: center;
-    display: flex;
-    flex-flow: column;
-    flex: 1; */
 }
 .radio-content i {
     padding-right: 0.5em;
@@ -621,48 +534,7 @@ input[type=radio].custom-radio:checked + .radio-item:after {
     border-radius: 50%;
     background: #76a7e1;
 }
-
 /* <<< radio better */
-
-/* Checkbox source: https://paulund.co.uk/style-checkboxes-with-css */
-/*
-input[type=checkbox] {
-    visibility: hidden;
-}
-.checkbox {
-    position: relative;
-}
-.checkbox label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-color: #70b0f0;
-    border-style: solid;
-    background-color: #7fbff5;
-}
-/* Display the tick inside the checkbox
-.checkbox label:after {
-    opacity: 0.2;
-    content: '';
-    position: absolute;
-    background: transparent;
-    border-color: #333;
-    border-style: solid;
-    border-top: none;
-    border-right: none;
-
-    transform: rotate(-45deg);
-}
-/* Create the hover event of the tick
-.checkbox label:hover::after {
-    opacity: 0.5;
-}
-/* Create the checkbox state for the tick
-.checkbox input[type=checkbox]:checked + label:after {
-    opacity: 1;
-}
-*/
 
 /* input type=range */
 input[type=range].urgency {
@@ -762,7 +634,6 @@ input[type=range].urgency::-ms-thumb {
     border-radius: 0.8rem;
     background: #edbe76;
     cursor: pointer;
-    /* height: 6px; */
 }
 input[type=range].urgency:focus::-ms-fill-lower {
     background: #eff0f5;
@@ -833,12 +704,10 @@ select {
     min-width: 6rem;
     padding: 0.4rem 2rem 0.25rem 0.4rem;
     font-size: 120%;
-    /* border: 0.08rem solid Red; */
     height: 2rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /* background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee; */
 }
 .select-container {
     position: relative;
@@ -983,24 +852,6 @@ img.img-resize {
 
 
 /* --- Standard UI controls */
-/*
-.checkbox {
-    width: 25px;
-    margin: 20px 100px;
-}
-.checkbox label {
-    width: 25px;
-    height: 25px;
-    border-width: 1px;
-}
-.checkbox label:after {
-    width: 9px;
-    height: 5px;
-    top: 6px;
-    left: 7px;
-    border-width: 3px;
-}
-*/
 
 .radio-tone {
     min-width: 16em;
