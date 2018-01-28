@@ -437,6 +437,12 @@ button.add {
     display: table-cell;
     vertical-align: middle;
 }
+.control-file-upload:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
 .control-file-upload input.control-file-button {
     position: absolute;
     top: 0;
