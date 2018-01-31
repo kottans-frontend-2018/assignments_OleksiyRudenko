@@ -1,30 +1,6 @@
 class DateX extends Date {
-  constructor(a, b, c, d, e, f, g) {
-    switch (arguments.length) {
-      case 0:
-        super();
-        break;
-      case 1:
-        super(a);
-        break;
-      case 2:
-        super(a, b);
-        break;
-      case 3:
-        super(a, b, c);
-        break;
-      case 4:
-        super(a, b, c, d);
-        break;
-      case 5:
-        super(a, b, c, d, e);
-        break;
-      case 6:
-        super(a, b, c, d, e, f);
-        break;
-      default:
-        super(a, b, c, d, e, f, g);
-    }
+  constructor() {
+    super(...arguments);
   }
 
   getSeconds() {
