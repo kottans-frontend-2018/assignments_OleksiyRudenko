@@ -1,0 +1,289 @@
+html {
+    background-color: #eee;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', Georgia, sans-serif;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #333;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+    height: 100%;
+}
+
+div.app {
+    height: 100%;
+    max-width: 48rem;
+    min-width: 16rem;
+
+    display: flex;
+    flex-flow: column;
+}
+
+main, footer, nav {
+    display: flex;
+    padding: 1rem;
+}
+
+header, footer {
+    flex: 0 0 auto;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+nav {
+    background-color: #333;
+    color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: #aaa;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    bottom: 0;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: auto;
+    background-color: #aaa;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+/* === COMMONS === */
+
+.button {
+    border: 0.06rem solid #333;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+.button i {
+    margin-right: 0.5rem;
+}
+
+a {
+    color: inherit;
+}
+
+a.undecorated {
+    text-decoration: none;
+}
+
+a.undecorated:hover {
+    text-decoration: underline;
+}
+
+button.add-pizza {
+    line-height: 3rem;
+}
+
+address {
+    font-style: normal;
+    margin-right: 1rem;
+}
+
+/* === HEADER === */
+
+.clock {
+    font-family: 'Overpass Mono', monospace;
+    text-transform: full-width;
+}
+
+.header-block {
+    width: 11rem;
+    height: 3rem;
+    line-height: 3rem;
+    border: 0.06rem solid transparent;
+    margin: 0.5rem;
+}
+
+.header-button {
+    border-color: #aaa;
+    background-color: #333;
+    color: #aaa;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #eee;
+    box-shadow: 0 0 0.8rem #eee;
+}
+
+img.logo {
+    height: 3rem;
+}
+
+#logo {
+    order: 2;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#current-time { order: 1; }
+#signin { order: 99; }
+
+div.add-pizza {
+    flex: 1;
+    background-color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.add-pizza button {
+    min-width: 12rem;
+    line-height: 3rem;
+}
+
+div.add-pizza button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #f30;
+    box-shadow: 0 0 0.8rem #f30;
+}
+
+/* === FOOTER === */
+.footer-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* === MAIN === */
+/* --- pizza --- */
+div.pizza-container {
+    flex: 1;
+
+    font-size: 0.9rem;
+    width: calc(33.33% - 1rem);
+    /* max-width: 16rem; */
+    min-width: 12rem;
+    max-height: 18rem;
+    background-color: #eee;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+div.pizza-placeholder {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.pizza-header {
+    position: relative;
+    margin: 0.5rem 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.pizza-footer {
+    margin: 0.5rem 0.5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.pizza-image {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.pizza-image img {
+    max-width: 10rem;
+    height: auto;
+}
+
+div.pizza-name {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0 0.25rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.pizza-timing, div.pizza-props {
+    display: flex;
+    flex-flow: column;
+}
+
+div.pizza-timing {
+    margin-right: 1.5rem;
+}
+
+div.pizza-props {
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+div.pizza-timing > *, div.pizza-props > div {
+    line-height: 1.5rem;
+}
+
+div.pizza-ready {
+    color: Red;
+}
+
+@media screen and (max-width: 420px) {
+    #copyright {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #logo, #office-address {
+        display: none;
+    }
+}
