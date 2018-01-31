@@ -283,6 +283,11 @@ div.pizza-ready {
     #logo {
         display: none;
     }
+    #current-time {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -298,6 +303,9 @@ div.pizza-ready {
 @media screen and (max-width: 607px) {
     #office-address {
         display: none;
+    }
+    #current-time {
+        width: auto;
     }
     #logo {
         width: 3rem;
