@@ -1,41 +1,76 @@
-class DateX extends Date {
-  constructor() {
-    super(...arguments);
+/**
+ * class DateX
+ */
+class DateX {
+  constructor(...arguments) {
+    this.date = new Date(...arguments);
   }
 
+  /**
+   * Returns zero-padded seconds.
+   * @returns {string}
+   */
   getSeconds() {
-    const seconds = super.getSeconds();
-    return (seconds < 10) ? '0' + seconds : seconds;
+    const seconds = this.date.getSeconds();
+    return (seconds < 10) ? '0' + seconds : '' + seconds;
   }
 
+  /**
+   * Returns zero-padded minutes.
+   * @returns {string}
+   */
   getMinutes() {
-    const minutes = super.getMinutes();
-    return (minutes < 10) ? '0' + minutes : minutes;
+    const minutes = this.date.getMinutes();
+    return (minutes < 10) ? '0' + minutes : '' + minutes;
   }
 
+  /**
+   * Returns zero-padded hours.
+   * @returns {string}
+   */
   getHours() {
-    const hours = super.getHours();
-    return (hours < 10) ? '0' + hours : hours;
+    const hours = this.date.getHours();
+    return (hours < 10) ? '0' + hours : '' + hours;
   }
 
+  /**
+   * Returns zero-padded day of month.
+   * @returns {string}
+   */
   getDate() {
-    const day = super.getDate();
-    return (day < 10) ? '0' + day : day;
+    const day = this.date.getDate();
+    return (day < 10) ? '0' + day : '' + day;
   }
 
+  /**
+   * Returns zero-padded month.
+   * @returns {string}
+   */
   getMonth() {
-    const months = super.getMonth() + 1;
-    return (months < 10) ? '0' + months : months;
+    const months = this.date.getMonth() + 1;
+    return (months < 10) ? '0' + months : '' + months;
   }
 
+  /**
+   * Returns date as YYYY-MM-DD
+   * @returns {string}
+   */
   getYMD() {
     return `${this.getFullYear()}-${this.getMonth()}-${this.getDate()}`;
   }
 
+  /**
+   * Returns time as HH:mm (24 hrs)
+   * @returns {string}
+   */
   getHM() {
     return `${this.getHours()}:${this.getMinutes()}`;
   }
 
+  /**
+   * Returns datetime as YYYY-MM-DD HH:mm
+   * @returns {string}
+   */
   getYMDHM() {
     return this.getYMD() + ' ' + this.getHM();
   }
