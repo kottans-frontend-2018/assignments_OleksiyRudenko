@@ -276,4 +276,14 @@ div.pizza-ready {
     color: Red;
 }
 
+@media screen and (max-width: 420px) {
+    #copyright {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 620px) {
+    #logo, #office-address {
+        display: none;
+    }
+}
