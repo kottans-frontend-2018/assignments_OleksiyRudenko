@@ -2,7 +2,7 @@
  * class DateX
  */
 class DateX {
-  constructor(...arguments) {
+  constructor() {
     this.date = new Date(...arguments);
   }
 
@@ -56,7 +56,7 @@ class DateX {
    * @returns {string}
    */
   getYMD() {
-    return `${this.getFullYear()}-${this.getMonth()}-${this.getDate()}`;
+    return `${this.date.getFullYear()}-${this.getMonth()}-${this.getDate()}`;
   }
 
   /**
@@ -73,5 +73,29 @@ class DateX {
    */
   getYMDHM() {
     return this.getYMD() + ' ' + this.getHM();
+  }
+
+  /**
+   * Passthrough for date.toLocaleTimeString()
+   * @returns {string}
+   */
+  toLocaleTimeString() {
+    return this.date.toLocaleTimeString(...arguments);
+  }
+
+  /**
+   * Passthrough for date.getTime()
+   * @returns {number}
+   */
+  getTime() {
+    return this.date.getTime(...arguments);
+  }
+
+  /**
+   * Passthrough for date.setTime()
+   * @returns {number}
+   */
+  setTime() {
+    return this.date.setTime(...arguments);
   }
 }
