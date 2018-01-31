@@ -5,8 +5,10 @@
 This project's been developed while taking
 [Kottans Frontend Course](https://github.com/kottans/frontend).
 
-[Check it out](https://oleksiyrudenko.github.io/html5-checkout-form/index.html)
+[Check it out](https://kottans-frontend-2018.github.io/assignments_OleksiyRudenko/task_11/index.html)
 (click logo to see unstyled page).
+
+[html5 validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkottans-frontend-2018.github.io%2Fassignments_OleksiyRudenko%2Ftask_11%2Findex.html)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

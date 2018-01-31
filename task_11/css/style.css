@@ -237,6 +237,13 @@ fieldset.counted > legend::before {
     top: -0.25rem;
 }
 
+#form-section-upload aside {
+    border: 0.06rem solid #d7d8e0;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
 #form-section-languages {
     display: flex;
     flex-flow: column;
@@ -309,6 +316,7 @@ aside.timeline {
     position: relative;
     border: 0.06rem solid #e6e8ee;
     border-radius: 0.25rem;
+    color: #6e768f;
     height: 1.5rem;
     line-height: 1.5rem;
     padding-left: 0.5ex;
@@ -903,6 +911,10 @@ img.img-resize {
 
 aside {
     padding: 0.8rem 0.8rem 0.8rem 3rem;
+}
+
+aside.file-list {
+    padding-left: 0.8rem;
 }
 
 /* --- footer --- */
