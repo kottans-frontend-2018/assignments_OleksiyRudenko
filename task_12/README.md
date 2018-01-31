@@ -8,6 +8,6 @@ to make a responsive layout as per
 
 ![layout](https://cdn.rawgit.com/kottans/frontend/f323282a/img/pizza-manager.png)
 
-[HTML5 validator](https://html5.validator.nu/?doc=https%3A%2F%2Foleksiyrudenko.github.io%2Fassignments_OleksiyRudenko%2Ftask_12%2Findex.html&showimagereport=yes&showsource=yes)
+[HTML5 validator](https://html5.validator.nu/?doc=https%3A%2F%2Fkottans-frontend-2018.github.io%2Fassignments_OleksiyRudenko%2Ftask_12%2Findex.html&showimagereport=yes)
 
 
