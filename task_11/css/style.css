@@ -380,7 +380,7 @@ div.payment-methods {
     align-items: center;
 }
 
-span.payment-method div.radio-content {
+span.payment-method .radio-content {
     display: flex;
     min-height: 1.5rem;
     justify-content: center;
@@ -491,8 +491,9 @@ button.add {
     flex-flow: column;
 }
 .radio-column > label {
+    display: flex;
     flex: 1;
-    padding: 0;
+    margin: 0.8rem 0;
 }
 
 /* radio better >>> */
@@ -863,7 +864,7 @@ figure.img-resize {
     width: intrinsic;
 }
 
-img.img-resize {
+.img-resize {
     width: auto;
     max-width: 100%;
     height: auto;
@@ -888,11 +889,14 @@ img.img-resize {
 /* --- Standard UI controls */
 
 .radio-tone {
-    min-width: 16em;
+    display: inline-block;
+    min-width: 13em;
 }
 
-.radio-tone div.radio-content {
-    padding-left: 2em;
+.radio-tone > .label {
+    display: inline-block;
+    padding-left: 1rem;
+    line-height: 1em;
 }
 
 .radio-doctype {
@@ -903,8 +907,8 @@ img.img-resize {
     padding-right: 2em;
 }
 
-.radio-doctype > span {
-    line-height: 1.5rem;
+span.label {
+    line-height: 3rem;
 }
 
 /* === Semantical === */
