@@ -385,7 +385,8 @@
                             <div><label for="card-expiry-date" class="label">Expiry date</label></div>
                             <div><input id="card-expiry-date" name="card-expiry-date" type="month" value=""
                                    min="2018-01" max="2050-12"
-                                   autocomplete="cc-exp"
+                                   data-autocomplete="cc-exp"
+                                        autocomplete="on"
                                    size="10"
                                    title="Card should be valid at least over next 3 days"
                                    required />
@@ -394,7 +395,8 @@
                         <div class="column">
                             <div><label for="card-code" class="label">Code</label></div>
                             <div><input id="card-code" name="card-code" type="password" value=""
-                                   autocomplete="cc-csc"
+                                   data-autocomplete="cc-csc"
+                                        autocomplete="on"
                                    maxlength="3" size="3"
                                    pattern="[\d]{3,3}"
                                    title="Must contain a valid CVV/CVV2 3-digit code"
