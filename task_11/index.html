@@ -115,7 +115,7 @@
                             <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
                             Upload a new file
                         </p>
-                        <input id="uploadBtn" type="file" name="files[]" class="control-file-button" multiple value="Upload new file"
+                        <input id="uploadBtn" type="file" name="files[]" class="control-file-button" multiple title="Upload a new file"
                                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
                     </div>
                     <aside class="file-list">
@@ -246,7 +246,7 @@
                         <legend>Tell us how urgent this job is</legend>
                         <div class="urgency-container">
                             <div class="urgency-control">
-                                <input required type="range" name="urgency" class="urgency" min="0" max="100" step="50" value="50" list="urgency-tickmarks" />
+                                <input type="range" name="urgency" class="urgency" min="0" max="100" step="50" value="50" list="urgency-tickmarks" />
                                 <datalist id="urgency-tickmarks">
                                     <option value="0" label="I got time"></option>
                                     <option value="50" label="Average" class="range-label-active range-label-selected"></option>
@@ -299,12 +299,12 @@
                             <div><label for="user-name" class="label">Full name</label></div>
                             <div><input id="user-name" name="user-name" type="text" value=""
                                    autocomplete="cc-name"
-                                   inputmode="latin-name"
                                    minlength="3"
                                    maxlength="32"
                                    pattern="[A-Za-z\s]{3,32}"
                                    title="Only latin letters, as specified on your credit card"
                                    placeholder="Your name" required />
+                                   <!-- inputmode="latin-name" -->
                                 <label for="user-name" class="validity"></label>
                             </div>
                         </div>
@@ -314,12 +314,12 @@
                             <div><label for="user-email" class="label">Email address</label></div>
                             <div><input id="user-email" name="user-email" type="email" value=""
                                    autocomplete="email"
-                                   inputmode="email"
                                    minlength="6"
                                    maxlength="32"
                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                                    title="Must contain valid email address"
-                                   placeholder="Your email address" required /><!-- inputmode arbitrary for type=="email" -->
+                                   placeholder="Your email address" required />
+                                   <!-- inputmode="email" arbitrary for this type -->
                                 <label for="user-email" class="validity"></label>
                             </div>
                         </div>
@@ -327,12 +327,12 @@
                             <div><label for="user-password" class="label">Choose a password</label></div>
                             <div><input id="user-password" name="user-password" type="password" value=""
                                    autocomplete="current-password"
-                                   inputmode="verbatim"
                                    minlength="8"
                                    maxlength="32"
                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters (32 max)"
                                    placeholder="Password for your account with us" required />
+                                <!-- inputmode="verbatim" -->
                                 <label for="user-password" class="validity"></label>
                             </div>
                         </div>
@@ -373,18 +373,18 @@
                             <div><label for="card-number" class="label">Card number</label></div>
                             <div><input id="card-number" name="card-number" type="text" value=""
                                    autocomplete="cc-number"
-                                   inputmode="numeric"
                                    maxlength="19" size="20"
                                    pattern="[\d\s]{16,19}"
                                    title="Must contain a valid card number 16 digits or 19 for AmEx"
                                    placeholder="0000 0000 0000 0000" required />
+                                <!-- inputmode="numeric" -->
                                 <label for="card-number" class="validity"></label>
                             </div>
                         </div>
                         <div class="column">
                             <div><label for="card-expiry-date" class="label">Expiry date</label></div>
-                            <div><input id="card-expiry-date" name="card-expiry-date" type="month" value=""
-                                   min="2018-01" max="2050-12"
+                            <div><input id="card-expiry-date" name="card-expiry-date" type="date" value=""
+                                   min="2018-01-01" max="2050-12-31"
                                    autocomplete="cc-exp"
                                    size="10"
                                    title="Card should be valid at least over next 3 days"
@@ -395,11 +395,11 @@
                             <div><label for="card-code" class="label">Code</label></div>
                             <div><input id="card-code" name="card-code" type="password" value=""
                                    autocomplete="cc-csc"
-                                   inputmode="numeric"
                                    maxlength="3" size="3"
                                    pattern="[\d]{3,3}"
                                    title="Must contain a valid CVV/CVV2 3-digit code"
                                    placeholder="000" required />
+                                <!-- inputmode="numeric" -->
                                 <label for="card-code" class="validity"></label>
                             </div>
                         </div>
