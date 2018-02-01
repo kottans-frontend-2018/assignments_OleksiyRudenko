@@ -447,10 +447,8 @@ button.add {
 .control-file-upload-focus {
     box-sizing: border-box;
     border: 1px solid transparent;
-    border-radius: 0.06rem;
-    margin: -3px -3px -3px -3px;
-    width: 50%;
-    height: 50%;
+    border-radius: 0.25rem;
+    margin: -1px -1px -1px -1px;
 }
 
 input.control-file-upload-button {
@@ -469,10 +467,10 @@ input.control-file-upload-button {
 
 input.control-file-upload-button:focus + .control-file-upload-focus {
     border-color: #79abfe;
-    border-radius: 0.06rem;
 }
 
 .control-file-upload-label {
+    display: inline-block;
     width: 10rem;
     height: 3rem;
     border: 0.06rem solid #d7d8e0;
