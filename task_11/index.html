@@ -110,13 +110,19 @@
                 </fieldset>
                 <fieldset id="form-section-upload" class="counted">
                     <legend>Upload your documents<span>(Doc, Docx, Text, PDF, Markdown)</span></legend>
-                    <div class="control-file-upload">
-                        <p class="control-file-label">
-                            <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
-                            Upload a new file
-                        </p>
-                        <input id="uploadBtn" type="file" name="files[]" class="control-file-button" multiple title="Upload a new file"
-                               accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <div>
+                        <div class="control-file-upload">
+                            <input id="upload-btn" type="file" name="files[]"
+                                   class="control-file-upload-button"
+                                   multiple title="Upload a new file"
+                                   accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                            <div class="control-file-upload-focus">
+                                <div class="control-file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                                    Upload a new file
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <aside class="file-list">
                         <table>

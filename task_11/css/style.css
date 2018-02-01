@@ -434,43 +434,62 @@ button.add {
 /* input type=file */
 .control-file-upload {
     position: relative;
-    overflow: hidden;
-    margin: 0.8rem;
-    background-color: #f7f7fa;
-    height: 2.25rem;
     width: 10rem;
-    text-align: center;
-    border: 0.08rem solid #d7d8e0;
-    border-radius: 0.25rem;
-    display: table-cell;
-    vertical-align: middle;
+    height: 3rem;
+    background-color: #fff;
 }
-.control-file-upload:hover {
+
+.control-file-upload-focus,
+.control-file-upload-button {
+    position: absolute;
+}
+
+.control-file-upload-focus {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 0.06rem;
+    margin: -3px -3px -3px -3px;
+}
+
+input.control-file-upload-button {
+    top: 0;
+    /* right: 0; */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    cursor: pointer;
+    /* opacity: 0;
+    filter: alpha(opacity=0); */
+    height: 100%;
+    text-align: center;
+}
+
+input.control-file-upload-button:focus + .control-file-upload-focus {
+    border-color: #79abfe;
+    border-radius: 0.06rem;
+}
+
+.control-file-upload-label {
+    width: 10rem;
+    height: 3rem;
+    border: 0.06rem solid #d7d8e0;
+    border-radius: 0.25rem;
+    background-color: #f7f7fa;
+    font-weight: bold;
+    font-size: 110%;
+    color: #9fb0d4;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.control-file-upload-label:hover {
     cursor: pointer;
     outline: none;
     border-color: #66d;
     box-shadow: 0 0 1rem #66d;
 }
-.control-file-upload input.control-file-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    height: 100%;
-    text-align: center;
-}
-.control-file-label {
-    padding: 0.8rem;
-    font-weight: bold;
-    font-size: 110%;
-    color: #9fb0d4;
-}
-.control-file-label i {
+
+.control-file-upload-label > i {
     margin-right: 1.5ex;
 }
 
