@@ -545,7 +545,14 @@ input.control-file-upload-button:focus + .control-file-upload-focus {
 }
 
 input[type=radio].custom-radio {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
 input[type=radio].custom-radio:checked + .radio-item {
