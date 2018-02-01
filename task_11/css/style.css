@@ -211,7 +211,7 @@ legend span {
     margin-bottom: 3rem;
 }
 
-#form-section-document-type section {
+#form-section-document-type > .radio-group {
     margin: 0 2.5rem 4rem 2.5rem;
 }
 
@@ -475,22 +475,22 @@ button.add {
 }
 
 /* Radio */
-section.radio-row {
+.radio-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
 }
-section.radio-row > label {
+.radio-row > label {
     display: flex;
     flex: 1;
     margin: 0.8rem;
 }
-section.radio-column {
+.radio-column {
     display: flex;
     flex-flow: column;
 }
-section.radio-column > label {
+.radio-column > label {
     flex: 1;
     padding: 0;
 }
