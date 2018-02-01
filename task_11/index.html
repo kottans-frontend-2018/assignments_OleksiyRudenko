@@ -73,7 +73,7 @@
                 <fieldset id="form-section-document-type">
                     <legend>Select what you want to translate</legend>
                     <div class="radio-group radio-row">
-                        <label>
+                        <label for="document-type-1">
                             <input type="radio" class="custom-radio" name="document-type" id="document-type-1" value="website" required />
                             <span class="radio-item">
                                 <span class="radio-content radio-doctype">
@@ -84,7 +84,7 @@
                                 </span>
                             </span>
                         </label>
-                        <label>
+                        <label for="document-type-2">
                             <input type="radio" class="custom-radio" name="document-type" id="document-type-2" value="documents" required checked />
                             <span class="radio-item">
                                 <span class="radio-content radio-doctype">
@@ -95,7 +95,7 @@
                                 </span>
                             </span>
                         </label>
-                        <label>
+                        <label for="document-type-3">
                             <input type="radio" class="custom-radio" name="document-type" id="document-type-3" value="social-account" required />
                             <span class="radio-item">
                                 <span class="radio-content radio-doctype">
@@ -112,17 +112,16 @@
                     <legend>Upload your documents<span>(Doc, Docx, Text, PDF, Markdown)</span></legend>
                     <div>
                         <div class="control-file-upload">
-                            <div class="control-file-upload-focus">
-                                <div class="control-file-upload-label">
-                                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
-                                    Upload a new file
-                                </div>
-                            </div>
                             <input id="upload-btn" type="file" name="files[]"
                                    class="control-file-upload-button"
                                    multiple title="Upload a new file"
                                    accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                            <div class="control-file-upload-focus"></div>
+                            <div class="control-file-upload-focus">
+                                <label for="upload-btn" class="control-file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                                    Upload a new file
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <aside class="file-list">
