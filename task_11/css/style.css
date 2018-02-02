@@ -576,6 +576,7 @@ input[type=range].urgency {
     position: relative;
     -webkit-appearance: none;
     width: 100%;
+    height: 2rem;
     max-width: 18rem;
     margin: 0.25rem;
     padding: 0 0.8rem;
@@ -589,7 +590,8 @@ input[type=range].urgency:before {
     height: 0.4rem;
     border-radius: 0.2rem;
     background-color: #d6d8e2;
-    margin-top: 0.8rem;
+    top: 50%;
+    margin-top: -0.2rem;
     margin-left: 0.06rem;
 }
 input[type=range].urgency:after {
@@ -601,7 +603,8 @@ input[type=range].urgency:after {
     height: 0.4rem;
     border-radius: 0.2rem;
     background-color: #d6d8e2;
-    margin-top: 0.8rem;
+    top: 50%;
+    margin-top: -0.2rem;
     float: right;
     margin-left: -0.35rem;
 }
