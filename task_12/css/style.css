@@ -25,18 +25,11 @@ body {
     height: 100%;
 }
 
-div.app {
-    height: 100%;
-    max-width: 48rem;
-    min-width: 16rem;
-
+main, header, footer {
+    width: 100%;
     display: flex;
-    flex-flow: column;
-}
 
-main, footer, nav {
-    display: flex;
-    padding: 1rem;
+    justify-content: center;
 }
 
 header, footer {
@@ -44,18 +37,7 @@ header, footer {
 }
 
 header {
-    display: flex;
     flex-flow: column;
-    align-items: stretch;
-}
-
-nav {
-    background-color: #333;
-    color: #aaa;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 footer {
@@ -64,9 +46,6 @@ footer {
     font-size: 0.8rem;
     line-height: 2rem;
     bottom: 0;
-
-    flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 main {
@@ -74,9 +53,63 @@ main {
     position: relative;
     overflow-y: auto;
     background-color: #aaa;
+}
+
+.content-container {
+    max-width: 96rem;
+    min-width: 16rem;
+    flex: 1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content-container.header {
+    flex-flow: column;
+    align-items: stretch;
+}
+
+.content-container.main {
+    padding: 1rem;
 
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.content-container.footer {
+    padding: 1rem;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header-nav {
+    width: 100%;
+    background-color: #333;
+    color: #aaa;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.header-controls {
+    width: 100%;
+    background-color: #aaa;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+header nav {
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 /* === COMMONS === */
@@ -159,7 +192,6 @@ address {
 
 div.add-pizza {
     flex: 1;
-    background-color: #aaa;
 
     display: flex;
     flex-flow: row wrap;
