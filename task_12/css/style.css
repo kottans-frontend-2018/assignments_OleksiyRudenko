@@ -1,5 +1,14 @@
+:root {
+    --c-dark-primary: #333;
+    --c-light-primary: #aaa;
+
+    --c-light-brighter: #eee;
+
+    --c-accent-alert: #f30;
+}
+
 html {
-    background-color: #eee;
+    background-color: var(--c-light-primary);
     box-sizing: border-box;
     height: 100%;
 }
@@ -16,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    color: #333;
+    color: var(--c-dark-primary);
     font-size: 120%;
     padding: 0;
     margin: 0;
@@ -41,8 +50,8 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: #aaa;
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
     font-size: 0.8rem;
     line-height: 2rem;
     bottom: 0;
@@ -52,7 +61,7 @@ main {
     flex: 1 1 auto;
     position: relative;
     overflow-y: auto;
-    background-color: #aaa;
+    background-color: var(--c-light-primary);
 }
 
 .content-container {
@@ -87,8 +96,8 @@ main {
 
 .header-nav {
     width: 100%;
-    background-color: #333;
-    color: #aaa;
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
 
     display: flex;
     flex-flow: row nowrap;
@@ -97,7 +106,7 @@ main {
 
 .header-controls {
     width: 100%;
-    background-color: #aaa;
+    background-color: var(--c-light-primary);
 
     display: flex;
     flex-flow: row nowrap;
@@ -115,7 +124,7 @@ header nav {
 /* === COMMONS === */
 
 .button {
-    border: 0.06rem solid #333;
+    border: 0.06rem solid var(--c-dark-primary);
     border-radius: 0.25rem;
     text-align: center;
     margin: 0.5rem;
@@ -161,16 +170,16 @@ address {
 }
 
 .header-button {
-    border-color: #aaa;
-    background-color: #333;
-    color: #aaa;
+    border-color: var(--c-light-primary);
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
 }
 
 .header-button:hover {
     cursor: pointer;
     outline: none;
-    border-color: #eee;
-    box-shadow: 0 0 0.8rem #eee;
+    border-color: var(--c-light-brighter);
+    box-shadow: 0 0 0.8rem var(--c-light-brighter);
 }
 
 #logo {
@@ -206,8 +215,8 @@ div.add-pizza button {
 div.add-pizza button:hover {
     cursor: pointer;
     outline: none;
-    border-color: #f30;
-    box-shadow: 0 0 0.8rem #f30;
+    border-color: var(--c-accent-alert);
+    box-shadow: 0 0 0.8rem var(--c-accent-alert);
 }
 
 /* === FOOTER === */
@@ -230,7 +239,7 @@ div.pizza-container {
     /* max-width: 16rem; */
     min-width: 12rem;
     max-height: 18rem;
-    background-color: #eee;
+    background-color: var(--c-light-brighter);
     border-radius: 0.25rem;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -308,7 +317,8 @@ div.pizza-timing > *, div.pizza-props > div {
 }
 
 div.pizza-ready {
-    color: Red;
+    color: var(--c-accent-alert);
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 300px) {
