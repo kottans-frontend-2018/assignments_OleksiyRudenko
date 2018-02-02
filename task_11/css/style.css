@@ -1,0 +1,979 @@
+/* ==================================
+   = Non-viewport dependant styling =
+   ================================== */
+
+html {
+    background-color: #eceeff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    align-content: center;
+    color: #a5abc5; /* c05 #a5abc5 */
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    counter-reset: section;
+}
+
+/* --- Header --- */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 48rem;
+    max-width: 100%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+header > div {
+    /* position: relative; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* min-width: 120px;
+    min-height: 35px; */
+}
+.go-back {
+    order: -1;
+}
+.sign-in {
+    order: 99;
+}
+header a {
+    font-size: 100%;
+    color: #a5abc5;
+    text-decoration: none;
+    border-color: #c9d0e1; /* c02 */
+    border-style: solid;
+    text-align: center;
+    line-height: 2.25rem;
+    width: 8rem;
+    min-width: 7rem;
+    min-height: 2.25rem;
+    border-radius: 0.25rem;
+    border-width: 0.08rem;
+    text-transform: uppercase;
+}
+
+header a i {
+    padding-right: 2ex;
+}
+
+/* --- Main --- */
+
+main {
+    border-radius: 0.25rem;
+    width: 48rem;
+    max-width: 100%;
+    background-color: #fff;
+    font-size: 70%;
+}
+
+h3, h4, legend, th { /* c04 */
+    font-weight: bold;
+    color: #6e768f;
+    text-align: left;
+    font-size: 100%;
+    padding-bottom: 1rem;
+}
+
+h3, th {
+    text-transform: uppercase;
+}
+
+.block {
+    padding: 1.5rem 2rem 1rem 2.7rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h3 i {
+    position: absolute;
+    margin-left: -1.5rem;
+    font-size: 125%;
+}
+
+main a {
+    color: inherit;
+}
+
+main a.undecorated {
+    text-decoration: none;
+}
+
+main a.undecorated:hover {
+    text-decoration: underline;
+}
+
+span.invisible-text {
+    display: none;
+}
+
+button.frameless {
+    color: #a5abc5;
+    border: none;
+    background-color: rgba(175, 175, 175, 0);
+    cursor: pointer;
+}
+
+#main-header {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#order {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2;
+    border-bottom: 0.08rem solid #c9d0e1;
+}
+
+#order-summary {
+    display: flex;
+    flex: 4;
+    flex-flow: column;
+    margin-bottom: 0.5rem;
+}
+
+#order-summary > div {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+}
+
+.order-actions {
+    flex: 1 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.order-actions > div {
+    padding-right: 0.5rem;
+}
+
+#help-center {
+    flex: 1 0;
+    min-width: 14rem;
+    width: 100%;
+    border-left: 0.08rem solid #c9d0e1;
+    border-bottom: 0.08rem solid #c9d0e1;
+    text-align: justify;
+}
+
+#help-center address {
+    font-weight: bold;
+    color: #6e768f;
+    padding-top: 1em;
+}
+#help-center address a {
+    margin-right: 2ex;
+}
+
+fieldset legend {
+    font-size: 160%;
+    position: relative;
+}
+
+legend span {
+    font-size: 0.8rem;
+    color: #a5abc5;
+    margin-left: 2ex;
+    font-weight: normal;
+}
+
+#form-section-document-type legend {
+    text-align: center;
+    font-size: 160%;
+    letter-spacing: 0.5ex;
+    text-transform: uppercase;
+    border-bottom: 0.08rem solid #d7d8e0;
+    padding: 3rem 1ex 1ex 1ex;
+    margin-bottom: 3rem;
+}
+
+#form-section-document-type > .radio-group {
+    margin: 0 2.5rem 4rem 2.5rem;
+}
+
+fieldset {
+    padding-bottom: 4rem;
+}
+
+fieldset.counted > legend::before {
+    counter-increment: section;
+    font-size: 80%;
+    content: counter(section);
+    position: absolute;
+    margin-left: -1.2rem;
+    border-radius: 50%;
+    border-width: 0.06rem;
+    border-style: solid;
+    border-color: #6e768f;
+    height: 1.6rem;
+    width: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    left: -1rem;
+    top: -0.25rem;
+}
+
+#form-section-upload aside {
+    border: 0.06rem solid #d7d8e0;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+#form-section-languages {
+    display: flex;
+    flex-flow: column;
+}
+
+#form-section-languages > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#form-section-languages div.lang-label {
+    min-width: 6rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+#form-section-tone {
+    flex: 0;
+}
+
+#form-section-urgency {
+    flex: 1;
+    padding-left: 3rem;
+    max-width: 20rem;
+}
+
+strong {
+    color: #edbe76;
+}
+
+aside.timeline {
+    margin-top: 2rem;
+    border: 0.06rem solid #e6e8ee;
+    border-radius: 0.25rem;
+
+}
+
+.row {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.column {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding-right: 1rem;
+}
+
+.column label.label {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.column input[type="text"],
+.column input[type="month"],
+.column input[type="password"],
+.column input[type="email"]
+{
+    position: relative;
+    border: 0.06rem solid #e6e8ee;
+    border-radius: 0.25rem;
+    color: #6e768f;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding-left: 0.5ex;
+    padding-right: 3ex;
+}
+
+.column input[type="text"]::placeholder,
+.column input[type="month"]::placeholder,
+.column input[type="password"]::placeholder,
+.column input[type="email"]::placeholder {
+    color: #b5bbd5;
+    font-size: 80%;
+}
+
+.column input[type="text"]:required + label.validity,
+.column input[type="password"]:required + label.validity,
+.column input[type="email"]:required + label.validity {
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+}
+
+
+.column input[type="text"]:required:invalid + label.validity::before,
+.column input[type="password"]:required:invalid + label.validity::before,
+.column input[type="email"]:required:invalid + label.validity::before {
+    position: absolute;
+    color: Red;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: '\f057';
+    font-size: 140%;
+    right: 0.4rem;
+    top: -0.7rem;
+}
+
+.column input[type="text"]:required:valid + label.validity::before,
+.column input[type="password"]:required:valid + label.validity::before,
+.column input[type="email"]:required:valid + label.validity::before {
+    position: absolute;
+    color: #76a7e1;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: '\f058';
+    font-size: 140%;
+    right: 0.4rem;
+    top: -0.7rem;
+}
+
+div.payment-methods {
+    margin-top: 1rem;
+    width: 30rem;
+    max-width: 36rem;
+    min-width: 12rem;
+}
+
+.payment-method {
+    min-width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.payment-method .radio-content {
+    display: flex;
+    min-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-footer > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+#form-footer > div > div {
+    margin-left: 1rem;
+}
+
+/* --- Standard UI controls --- */
+
+input[type="submit"], button.form-action {
+    width: 7rem;
+    height: 2.25rem;
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #5fcac6;
+    border: 0.08rem solid #54aca9;
+    border-radius: 0.25rem;
+}
+button.form-action {
+    color: #a5abc5;
+    background-color: #f7f7fa;
+    border: 0.08rem solid #d7d8e0;
+    border-radius: 0.25rem;
+}
+button.add {
+    font-size: 100%;
+    text-transform: uppercase;
+    background-color: #f7f7fa;
+    height: 2rem;
+    width: 4.5rem;
+    text-align: center;
+    border: 0.08rem solid #d7d8e0;
+    color: #9fb0d4;
+    border-radius: 0.25rem;
+}
+
+/* input type=file */
+.control-file-upload {
+    position: relative;
+}
+
+input.control-file-upload-button {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+    height: 0.1px;
+    width: 0.1px;
+    position: absolute;
+    z-index: -1;
+}
+
+.control-file-upload-button + label {
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    border: 0.06rem solid #d7d8e0;
+    border-radius: 0.25rem;
+    background-color: #f7f7fa;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #9fb0d4;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.control-file-upload-button:focus + label {
+    outline: 1px solid #79abfe;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.control-file-upload-button + label:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
+
+.control-file-upload-button + label * {
+    pointer-events: none;
+}
+
+.control-file-upload-button + label > i {
+    margin-right: 1.5ex;
+}
+
+/* Radio */
+.radio-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.radio-row > label {
+    display: flex;
+    flex: 1;
+    margin: 0.8rem;
+}
+.radio-column {
+    display: flex;
+    flex-flow: column;
+}
+.radio-column > label {
+    display: flex;
+    flex: 1;
+    margin: 0.8rem 0;
+}
+
+/* radio better >>> */
+.radio-item {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border: 0.4rem solid transparent;
+    border-radius: 0.25rem;
+    flex: 1;
+}
+.radio-content {
+    z-index: 0;
+    margin: -0.25rem;
+    padding: 1.6rem 0 1.6rem 0;
+    border: 0.08rem solid #d7d8e0;
+    border-radius: 0.25rem;
+    font-size: 120%;
+    font-weight: bold;
+}
+.radio-content:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
+.radio-content i {
+    padding-right: 0.5em;
+}
+
+input[type=radio].custom-radio {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=radio].custom-radio:checked + .radio-item {
+    border: 0.4rem solid #76a7e1;
+    border-radius: 0.25rem;
+    z-index: 1;
+}
+
+input[type=radio].custom-radio:checked + .radio-item .radio-content {
+    border-color: #76a7e1;
+}
+
+input[type=radio].custom-radio:checked + .radio-item:after {
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    top: -0.8rem;
+    right: -0.8rem;
+    color: #fff;
+    font-size: 100%;
+    z-index: 2;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #76a7e1;
+}
+/* <<< radio better */
+
+/* input type=range */
+input[type=range].urgency {
+    position: relative;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2rem;
+    max-width: 18rem;
+    margin: 0.25rem;
+    padding: 0 0.8rem;
+}
+input[type=range].urgency:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background-color: #d6d8e2;
+    top: 50%;
+    margin-top: -0.2rem;
+    margin-left: 0.06rem;
+}
+input[type=range].urgency:after {
+    position: relative;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background-color: #d6d8e2;
+    top: 50%;
+    margin-top: -0.2rem;
+    float: right;
+    margin-left: -0.35rem;
+}
+input[type=range].urgency:focus {
+    outline: none;
+}
+input[type=range].urgency::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.4rem;
+    cursor: pointer;
+    background: #eff0f5;
+    border-radius: 0.36rem;
+}
+input[type=range].urgency::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+    background: #edbe76;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.25rem;
+}
+input[type=range].urgency:focus::-webkit-slider-runnable-track {
+    background: #eff0f5;
+}
+input[type=range].urgency::-moz-range-track {
+    width: 100%;
+    height: 0.4rem;
+    cursor: pointer;
+    background: #eff0f5;
+    border-radius: 0.36rem;
+}
+input[type=range].urgency::-moz-range-thumb {
+    z-index: 2;
+    position: relative;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+    background: #edbe76;
+    cursor: pointer;
+    -moz-appearance: none;
+    margin-top: -0.25rem;
+}
+input[type=range].urgency::-ms-track {
+    width: 100%;
+    height: 0.4rem;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range].urgency::-ms-fill-lower {
+    background: #eff0f5;
+    border-radius: 0.8rem;
+}
+input[type=range].urgency::-ms-fill-upper {
+    background: #eff0f5;
+    border-radius: 0.8rem;
+}
+input[type=range].urgency::-ms-thumb {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+    background: #edbe76;
+    cursor: pointer;
+}
+input[type=range].urgency:focus::-ms-fill-lower {
+    background: #eff0f5;
+}
+input[type=range].urgency:focus::-ms-fill-upper {
+    background: #eff0f5;
+}
+.urgency-container {
+    display: flex;
+    flex-flow: column;
+    max-width: 20rem;
+}
+.urgency-container ~ div {
+    flex: 1;
+}
+.urgency-labels {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.urgency-labels ~ div {
+    flex: 1;
+}
+
+.urgency-labels > div {
+    text-transform: uppercase;
+}
+
+.urgency-labels .range-label-selected {
+    color: #edbe76;
+}
+
+.range-labels {
+    padding: 0;
+    list-style: none;
+}
+.range-labels li {
+    position: relative;
+    float: left;
+    width: 90.25px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 100%;
+    cursor: pointer;
+}
+.range-labels li::before {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    width: 9px;
+    height: 9px;
+    background: #b2b2b2;
+    border-radius: 50%;
+}
+.range-labels .range-label-active {
+    color: #37adbf;
+}
+.range-labels .range-label-selected {
+    background: #37adbf;
+}
+.range-labels .range-label-active.range-label-selected::before {
+    display: none;
+}
+/* <<< range */
+
+/* select >>> */
+select {
+    color: #9098b8;
+    margin: 0.25rem;
+    border: 0.08rem solid #d7d8e0;
+    border-radius: 0.25rem;
+    background: #f7f7fa;
+    min-width: 6rem;
+    padding: 0.4rem 2rem 0.25rem 0.4rem;
+    font-size: 120%;
+    height: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select-container {
+    position: relative;
+}
+select:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
+.select-control {
+    position: absolute;
+    float: right;
+    right: 1rem;
+    bottom: 1rem;
+}
+/* CAUTION: IE hackery ahead */
+select::-ms-expand {
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+/* <<< select */
+
+/* --- Footer --- */
+
+footer {
+    margin-top: 5rem;
+    padding-bottom: 3.75rem;
+    background-color: #444a62; /* c22 */
+    width: 100%;
+    color: #b3b9d7; /* c24 */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+footer > div {
+    width: 48rem;
+    max-width: 48rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer > div > div {
+    padding-top: 3.75rem;
+}
+
+footer > div > div.text {
+    font-size: 80%;
+    flex: 1;
+    padding-left: 1.5rem;
+    width: 10rem;
+    min-width: 10rem;
+    margin-right: 1rem;
+}
+
+footer div.shrink {
+    flex: 0;
+    margin-right: 0;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
+
+footer h3 {
+    color: #c6ccea; /* c23 */
+}
+
+footer a:link, footer a:hover, footer a:visited, footer a:active {
+    color: #b3b9d7; /* c24 */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div.story {
+    font-style: oblique;
+}
+
+/* === Semantical === */
+address {
+    font-style: normal;
+}
+
+aside {
+    font-size: 100%;
+    border-color: #e6e8ee; /* c14 */
+    border-style: solid;
+}
+
+/* === Commons === */
+button:hover, input[type=submit]:hover, header a:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: #66d;
+    box-shadow: 0 0 1rem #66d;
+}
+
+/* === Logo ===
+   Repaint BW logo.
+   Source: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css/39796437
+   Color2filter conversion tool: https://codepen.io/sosuke/pen/Pjoqqp
+*/
+
+.logo-light { /* c03 #dadde7 */
+    -webkit-filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
+    filter: invert(93%) sepia(11%) saturate(211%) hue-rotate(193deg) brightness(95%) contrast(91%);
+}
+
+.logo-dark { /* c25 #383d50 */
+    -webkit-filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
+    filter: invert(22%) sepia(4%) saturate(3080%) hue-rotate(191deg) brightness(96%) contrast(91%);
+}
+
+/* ======================
+   =     Dimensions     =
+   = main width = 768px =
+   ====================== */
+
+/* --- General --- */
+
+figure.img-resize {
+    /* display: inline-block; */
+    width: intrinsic;
+}
+
+.img-resize {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.icon-doctype {
+    width: 8em;
+}
+
+.icon-pmt-logo {
+    max-width: 5em;
+    max-height: 3em;
+}
+
+/* --- header --- */
+
+
+/* --- Main --- */
+
+
+/* --- Standard UI controls */
+
+.radio-tone {
+    display: inline-block;
+    min-width: 13em;
+}
+
+.radio-tone > .label {
+    display: inline-block;
+    padding-left: 1rem;
+    line-height: 1em;
+}
+
+.radio-doctype {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+span.label {
+    line-height: 3rem;
+}
+
+/* === Semantical === */
+
+aside {
+    padding: 0.8rem 0.8rem 0.8rem 3rem;
+}
+
+aside.file-list {
+    padding-left: 0.8rem;
+}
+
+/* --- footer --- */
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

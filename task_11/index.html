@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp - Order Checkout</title>
+    <link rel="stylesheet" type="text/css" href="fonts/proxima-nova/fonts.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.4/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <header id="page-header">
+        <div><img src="img/logo-black-black.png" width="101" height="101" class="logo-light" alt="WebApp logo" onclick="switchStyling();"
+             title="Click me to un-style/restyle page" />
+        </div>
+        <div class="go-back">
+            <a href="#"><i class="fas fa-arrow-left" aria-hidden="true"></i>Go back</a>
+        </div>
+        <div class="sign-in">
+            <a href="#"><i class="fas fa-user" aria-hidden="true"></i>Sign in</a>
+        </div>
+    </header>
+    <main id="page-main">
+        <div id="main-header">
+            <div id="order" class="block">
+                <div id="order-summary">
+                    <h3>
+                        <i class="fas fa-clipboard" aria-hidden="true"></i>
+                        Your order
+                    </h3>
+                    <div class="order-summary-details">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Items</th>
+                                <th>Details</th>
+                                <th>Price</th>
+                                <th>Delivery</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2&nbsp;documents</td>
+                                <td>2&nbsp;languages</td>
+                                <td>$&nbsp;696.06</td>
+                                <td>48&nbsp;hours*</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="order-actions">
+                    <div><input type="submit" value="Place order" /></div>
+                    <div><button class="form-action" type="button">Print a quote</button></div>
+                </div>
+            </div>
+            <div id="help-center" class="block">
+                <h3>
+                    <i class="far fa-life-ring" aria-hidden="true"></i>
+                    Help center
+                </h3>
+                <div>If you need assistance while placing your order, contact one of our beloved
+                    Project Manager by phone or mail.
+                </div>
+                <address>
+                    <a href="tel:+971(0)555555" class="undecorated">+971 (0) 555 555</a>
+                    <a href="mailto:help@qtest.com" class="undecorated">help@qtest.com</a>
+                </address>
+            </div>
+        </div>
+        <div id="order-main" class="block">
+            <form>
+                <fieldset id="form-section-document-type">
+                    <legend>Select what you want to translate</legend>
+                    <div class="radio-group radio-row">
+                        <label for="document-type-1">
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-1" value="website" required />
+                            <span class="radio-item">
+                                <span class="radio-content radio-doctype">
+                                    <span class="img-resize icon-doctype">
+                                        <img src="img/doctype-1-ws.png" class="img-resize" title="Website" alt="Website" />
+                                    </span>
+                                    <span class="label">Website</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label for="document-type-2">
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-2" value="documents" required checked />
+                            <span class="radio-item">
+                                <span class="radio-content radio-doctype">
+                                    <span class="img-resize icon-doctype">
+                                        <img src="img/doctype-2-doc.png" class="img-resize" title="Documents" alt="Documents" />
+                                    </span>
+                                    <span class="label">Documents</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label for="document-type-3">
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-3" value="social-account" required />
+                            <span class="radio-item">
+                                <span class="radio-content radio-doctype">
+                                    <span class="img-resize icon-doctype">
+                                        <img src="img/doctype-3-social.png" class="img-resize" title="Social Account" alt="Social Account" />
+                                    </span>
+                                    <span class="label">Social Account</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset id="form-section-upload" class="counted">
+                    <legend>Upload your documents<span>(Doc, Docx, Text, PDF, Markdown)</span></legend>
+                    <div>
+                        <div class="control-file-upload">
+                            <input id="upload-btn" type="file" name="files[]"
+                                   class="control-file-upload-button"
+                                   multiple title="Upload a new file"
+                                   accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                            <label for="upload-btn" class="control-file-upload-label">
+                                <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                                Upload a new file
+                            </label>
+                        </div>
+                    </div>
+                    <aside class="file-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>File name</th>
+                                    <th>File size</th>
+                                    <th>Number of words</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-fw fa-file-word" aria-hidden="true"></i>
+                                        business_operations.docx
+                                    </td>
+                                    <td>78kb</td>
+                                    <td>842</td>
+                                    <td>
+                                        <button class="frameless" type="button" title="Remove">
+                                            <i class="fas fa-trash"></i>
+                                            <span class="invisible-text">Remove</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-fw fa-file-word" aria-hidden="true"></i>
+                                        business_financial.docx
+                                    </td>
+                                    <td>26kb</td>
+                                    <td>2,326</td>
+                                    <td>
+                                        <button class="frameless" type="button" title="Remove">
+                                            <i class="fas fa-trash"></i>
+                                            <span class="invisible-text">Remove</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                </fieldset>
+                <fieldset id="form-section-languages" class="counted">
+                    <legend>Choose your language pairings</legend>
+                    <div>
+                        <div class="lang-label"><label for="language-from">From</label></div>
+                        <div class="select-container">
+                            <div><select id="language-from" name="language-from">
+                                <option value="ara">Arabic</option>
+                                <option value="eng" selected>English</option>
+                                <option value="deu">German</option>
+                                <option value="kur">Kurdish</option>
+                                <option value="ukr">Ukrainian</option>
+                            </select></div>
+                            <div class="select-control"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="lang-label"><label for="language-to-1">To</label></div>
+                        <div class="select-container">
+                            <select id="language-to-1" name="language-to-1">
+                                <option value="ara" selected>Arabic</option>
+                                <option value="eng">English</option>
+                                <option value="deu">German</option>
+                                <option value="kur">Kurdish</option>
+                                <option value="ukr">Ukrainian</option>
+                            </select>
+                            <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="row-nowrap">
+                            <div class="select-container">
+                                <select id="language-to-2" name="language-to-2">
+                                    <option value="ara">Arabic</option>
+                                    <option value="eng">English</option>
+                                    <option value="deu">German</option>
+                                    <option value="kur" selected>Kurdish</option>
+                                    <option value="ukr">Ukrainian</option>
+                                </select>
+                                <span class="select-control"><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div><button class="frameless" type="button" title="Remove">
+                                <i class="fas fa-trash"></i>
+                                <span class="invisible-text">Remove</span>
+                            </button></div>
+                        </div>
+                        <div>
+                            <button class="add" type="button"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="flex-row">
+                    <fieldset id="form-section-tone" class="counted">
+                        <legend>Select your desired tone</legend>
+
+                        <!-- label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-1" value="website" required />
+                            <span class="radio-item">
+                                <span class="radio-content radio-doctype">
+                                    <span class="img-resize icon-doctype">
+                                        <img src="img/doctype-1-ws.png" class="img-resize" title="Website" alt="Website" />
+                                    </span>
+                                    <span class="label">Website</span>
+                                </span>
+                            </span>
+                        </label -->
+
+                        <div class="radio-group radio-column">
+                            <label>
+                                <input type="radio" class="custom-radio" name="address-tone" id="address-tone-1" value="friendly" required />
+                                <span class="radio-item">
+                                    <span class="radio-content radio-tone">
+                                        <span class="label"><i class="fas fa-comments" aria-hidden="true"></i>
+                                            Friendly / Casual
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" class="custom-radio" name="address-tone" id="address-tone-2" value="corporate" required checked />
+                                <span class="radio-item">
+                                    <span class="radio-content radio-tone">
+                                        <span class="label"><i class="fas fa-suitcase" aria-hidden="true"></i>
+                                            Corporate / Pro
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" class="custom-radio" name="address-tone" id="address-tone-3" value="formal" required checked />
+                                <span class="radio-item">
+                                    <span class="radio-content radio-tone">
+                                        <span class="label"><i class="fas fa-bullhorn" aria-hidden="true"></i>
+                                            Media / Formal
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="form-section-urgency" class="counted">
+                        <legend>Tell us how urgent this job is</legend>
+                        <div class="urgency-container">
+                            <div class="urgency-control">
+                                <input type="range" name="urgency" class="urgency" min="0" max="100" step="50" value="50" list="urgency-tickmarks" />
+                                <datalist id="urgency-tickmarks">
+                                    <option value="0" label="I got time"></option>
+                                    <option value="50" label="Average" class="range-label-active range-label-selected"></option>
+                                    <option value="100" label="Yesterday">Yesterday</option>
+                                </datalist>
+                            </div>
+                            <div class="urgency-labels">
+                                <div>I got time</div>
+                                <div class="range-label-active range-label-selected">Average</div>
+                                <div>Yesterday</div>
+                            </div>
+                        </div>
+
+                        <!-- ul class="range-labels">
+                            <li>I got time</li>
+                            <li class="range-label-active range-label-selected">Average</li>
+                            <li>Yesterday</li>
+                        </ul -->
+                        <!--
+                        <ul>
+                            <li><input type="radio" name="urgency" id="urgency-1" value="not-urgent" />
+                                <label for="urgency-1">I got time</label></li>
+                            <li><input type="radio" name="urgency" id="urgency-2" value="average" checked />
+                                <label for="urgency-2">Average</label></li>
+                            <li><input type="radio" name="urgency" id="urgency-3" value="yesterday" />
+                                <label for="urgency-3">Yesterday</label></li>
+                        </ul> -->
+                        <aside class="timeline">
+                            <h3>
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                Timeline info
+                            </h3>
+                            <div>With an <strong>I got time</strong> timeline set up, our expert translator
+                                will produce a perfect translation, and costs won't bite.
+                            </div>
+                            <div>With an <strong>average</strong> timeline set up, our expert translator can take
+                                a reasonable amount of time perfecting your translation.
+                            </div>
+                            <div>Should your require job done <strong>yesterday</strong> our expert translator
+                                will gladly overtime to only deliver the job as soon as it only possible.
+                            </div>
+                        </aside>
+                    </fieldset>
+                </div>
+                <fieldset id="form-section-signup" class="counted">
+                    <legend>Sign up and choose a payment method</legend>
+                    <div>Already have an account with us? <a href="#">Sign in</a>.</div>
+                    <div class="row">
+                        <div class="column left">
+                            <div><label for="user-name" class="label">Full name</label></div>
+                            <div><input id="user-name" name="user-name" type="text" value=""
+                                   autocomplete="cc-name"
+                                   minlength="3"
+                                   maxlength="32"
+                                   pattern="[A-Za-z\s]{3,32}"
+                                   title="Only latin letters, as specified on your credit card"
+                                   placeholder="Your name" required />
+                                   <!-- inputmode="latin-name" -->
+                                <label for="user-name" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div><label for="user-email" class="label">Email address</label></div>
+                            <div><input id="user-email" name="user-email" type="email" value=""
+                                   autocomplete="email"
+                                   minlength="6"
+                                   maxlength="32"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                   title="Must contain valid email address"
+                                   placeholder="Your email address" required />
+                                   <!-- inputmode="email" arbitrary for this type -->
+                                <label for="user-email" class="validity"></label>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="user-password" class="label">Choose a password</label></div>
+                            <div><input id="user-password" name="user-password" type="password" value=""
+                                   autocomplete="current-password"
+                                   minlength="8"
+                                   maxlength="32"
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
+                                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters (32 max)"
+                                   placeholder="Password for your account with us" required />
+                                <!-- inputmode="verbatim" -->
+                                <label for="user-password" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="radio-group radio-row payment-method">
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-1" value="credit-card" required checked />
+                                <span class="radio-item">
+                                    <span class="radio-content payment-method">
+                                        <span class="img-resize icon-pmt-logo"><img src="img/pmt-1-cc.png" class="img-resize" title="Credit card" alt="Credit card" /></span>
+                                        <span class="invisible-text">Credit card</span>
+                                    </span>
+                                </span>
+                            </label></div>
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-2" value="paypal" required />
+                                    <span class="radio-item">
+                                        <span class="radio-content payment-method">
+                                            <span class="img-resize icon-pmt-logo"><img src="img/pmt-2-pp.png" class="img-resize" title="Paypal" alt="Paypal" /></span>
+                                            <span class="invisible-text">Paypal</span>
+                                        </span>
+                                    </span>
+                            </label></div>
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-3" value="amazon" required />
+                                <span class="radio-item">
+                                    <span class="radio-content payment-method">
+                                        <span class="img-resize icon-pmt-logo"><img src="img/pmt-3-amazon.png" class="img-resize" title="Amazon" alt="Amazon" /></span>
+                                        <span class="invisible-text">Amazon</span>
+                                    </span>
+                                </span>
+                            </label></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div><label for="card-number" class="label">Card number</label></div>
+                            <div><input id="card-number" name="card-number" type="text" value=""
+                                   autocomplete="cc-number"
+                                   maxlength="19" size="20"
+                                   pattern="[\d\s]{16,19}"
+                                   title="Must contain a valid card number 16 digits or 19 for AmEx"
+                                   placeholder="0000 0000 0000 0000" required />
+                                <!-- inputmode="numeric" -->
+                                <label for="card-number" class="validity"></label>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="card-expiry-date" class="label">Expiry date</label></div>
+                            <div><input id="card-expiry-date" name="card-expiry-date" type="month" value=""
+                                   min="2018-01" max="2050-12"
+                                   data-autocomplete="cc-exp"
+                                        autocomplete="on"
+                                   size="10"
+                                   title="Card should be valid at least over next 3 days"
+                                   required />
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="card-code" class="label">Code</label></div>
+                            <div><input id="card-code" name="card-code" type="password" value=""
+                                   data-autocomplete="cc-csc"
+                                        autocomplete="on"
+                                   maxlength="3" size="3"
+                                   pattern="[\d]{3,3}"
+                                   title="Must contain a valid CVV/CVV2 3-digit code"
+                                   placeholder="000" required />
+                                <!-- inputmode="numeric" -->
+                                <label for="card-code" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="form-footer">
+                    <div>
+                        <div class="checkbox">
+                            <input id="tnc-consent" value="tnc-accepted" type="checkbox" required />
+                            <!-- label for="tnc-consent"></label -->
+                            <label for="tnc-consent">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <div><input type="submit" value="Place order" /></div>
+                        <div><button class="form-action" type="button">Print a quote</button></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer id="page-footer">
+        <div>
+            <div class="text">
+                <h3>
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    What we do
+                </h3>
+                <div class="story">We provide a full range of language services including content development,
+                    document, website and social media accounts translations.</div>
+            </div>
+            <div class="text">
+                <h3>
+                    <i class="far fa-compass" aria-hidden="true"></i>
+                    Our main office
+                </h3>
+                <address>
+                    <p>Dubai, UAE</p>
+                    <p>P.O.Box: 502735</p>
+                    <p>Phone: <a href="tel:+971(0)44278128" class="undecorated">+971 (0) 44278128</a></p>
+                </address>
+            </div>
+            <div class="text">
+                <h3>
+                    <i class="fas fa-share-alt" aria-hidden="true"></i>
+                    Connect with us
+                </h3>
+                <div>
+                    <address>
+                        <p>
+                            <i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i>
+                            <a href="#">Facebook</a>
+                        </p>
+                    </address>
+                    <address>
+                        <p>
+                            <i class="fab fa-twitter-square fa-fw" aria-hidden="true"></i>
+                            <a href="#">Twitter</a>
+                        </p>
+                    </address>
+                    <address>
+                        <p>
+                            <i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>
+                            <a href="#">LinkedIn</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            <div class="shrink">
+                <img src="img/logo-black-black.png" width="101" height="101" class="logo-dark" alt="WebApp logo" onclick="switchStyling();"
+                     title="Click me to un-style/restyle page" />
+            </div>
+        </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        // === Populate HTML5 input fields attributes ===
+        // --- Populate card expiry date attributes
+        let today = new Date();
+        // today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+        let e = document.getElementById('card-expiry-date');
+        let minDate = new Date();
+        minDate.setDate(today.getDate() + 3);
+        e.value = minDate.toJSON().slice(0,7);
+        e.min = minDate.toJSON().slice(0,7);
+        let maxDate = new Date(today.getFullYear() + 5, today.getMonth(), today.getDate() + 3);
+        e.max = maxDate.toJSON().slice(0,7);
+      });
+
+      function switchStyling() {
+        const stylesheets = document.querySelectorAll('[rel="stylesheet"]');
+        let stylesheet = [];
+        for (let item of stylesheets) {
+          stylesheet.push(item.sheet || item.styleSheet); // IE compatibility
+        }
+        stylesheet.forEach(item => { item.disabled = ! item.disabled});
+      }
+    </script>
+</body>
+</html>
