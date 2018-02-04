@@ -11,8 +11,7 @@ class DateX {
    * @returns {string}
    */
   getSeconds() {
-    const seconds = this.date.getSeconds();
-    return (seconds < 10) ? '0' + seconds : '' + seconds;
+    return (this.date.getSeconds() + '').padStart(2, '0');
   }
 
   /**
@@ -20,8 +19,7 @@ class DateX {
    * @returns {string}
    */
   getMinutes() {
-    const minutes = this.date.getMinutes();
-    return (minutes < 10) ? '0' + minutes : '' + minutes;
+    return (this.date.getMinutes() + '').padStart(2, '0');
   }
 
   /**
@@ -29,8 +27,7 @@ class DateX {
    * @returns {string}
    */
   getHours() {
-    const hours = this.date.getHours();
-    return (hours < 10) ? '0' + hours : '' + hours;
+    return (this.date.getHours() + '').padStart(2, '0');
   }
 
   /**
@@ -38,8 +35,7 @@ class DateX {
    * @returns {string}
    */
   getDate() {
-    const day = this.date.getDate();
-    return (day < 10) ? '0' + day : '' + day;
+    return (this.date.getDate() + '').padStart(2, '0');
   }
 
   /**
@@ -47,8 +43,7 @@ class DateX {
    * @returns {string}
    */
   getMonth() {
-    const months = this.date.getMonth() + 1;
-    return (months < 10) ? '0' + months : '' + months;
+    return ((this.date.getMonth() + 1) + '').padStart(2, '0');
   }
 
   /**
