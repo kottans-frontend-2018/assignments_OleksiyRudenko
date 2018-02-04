@@ -1,0 +1,359 @@
+:root {
+    --c-dark-primary: #333;
+    --c-light-primary: #aaa;
+
+    --c-light-brighter: #eee;
+
+    --c-accent-alert: #f30;
+}
+
+html {
+    background-color: var(--c-light-primary);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', Georgia, sans-serif;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--c-dark-primary);
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+    height: 100%;
+}
+
+main, header, footer {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+header, footer {
+    flex: 0 0 auto;
+}
+
+header {
+    flex-flow: column;
+}
+
+footer {
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
+    font-size: 0.8rem;
+    line-height: 2rem;
+    bottom: 0;
+}
+
+main {
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: auto;
+    background-color: var(--c-light-primary);
+}
+
+.content-container {
+    max-width: 96rem;
+    min-width: 16rem;
+    flex: 1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content-container.header {
+    flex-flow: column;
+    align-items: stretch;
+}
+
+.content-container.main {
+    padding: 1rem;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.content-container.footer {
+    padding: 1rem;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header-nav {
+    width: 100%;
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.header-controls {
+    width: 100%;
+    background-color: var(--c-light-primary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+header nav {
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/* === COMMONS === */
+
+.button {
+    border: 0.06rem solid var(--c-dark-primary);
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+.button i {
+    margin-right: 0.5rem;
+}
+
+a {
+    color: inherit;
+}
+
+a.undecorated {
+    text-decoration: none;
+}
+
+a.undecorated:hover {
+    text-decoration: underline;
+}
+
+button.add-pizza {
+    line-height: 3rem;
+}
+
+address {
+    font-style: normal;
+    margin-right: 1rem;
+}
+
+/* === HEADER === */
+
+.clock {
+    font-family: 'Overpass Mono', monospace;
+    text-transform: full-width;
+}
+
+.header-block {
+    width: 11rem;
+    height: 3rem;
+    line-height: 3rem;
+    border: 0.06rem solid transparent;
+    margin: 0.5rem;
+}
+
+.header-button {
+    border-color: var(--c-light-primary);
+    background-color: var(--c-dark-primary);
+    color: var(--c-light-primary);
+}
+
+.header-button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: var(--c-light-brighter);
+    box-shadow: 0 0 0.8rem var(--c-light-brighter);
+}
+
+#logo {
+    order: 2;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#logo > div {
+    background: url(../img/logo.png) no-repeat center;
+    background-size: auto 3rem;
+    height: 3rem;
+    width: 100%;
+}
+#current-time { order: 1; }
+#signin { order: 99; }
+
+div.add-pizza {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.add-pizza button {
+    min-width: 12rem;
+    line-height: 3rem;
+}
+
+div.add-pizza button:hover {
+    cursor: pointer;
+    outline: none;
+    border-color: var(--c-accent-alert);
+    box-shadow: 0 0 0.8rem var(--c-accent-alert);
+}
+
+/* === FOOTER === */
+.footer-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* === MAIN === */
+/* --- pizza --- */
+div.pizza-container {
+    flex: 1;
+
+    font-size: 0.9rem;
+    width: calc(33.33% - 1rem);
+    /* max-width: 16rem; */
+    min-width: 12rem;
+    max-height: 18rem;
+    background-color: var(--c-light-brighter);
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+div.pizza-placeholder {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.pizza-header {
+    position: relative;
+    margin: 0.5rem 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.pizza-footer {
+    margin: 0.5rem 0.5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.pizza-image {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.pizza-image img {
+    max-width: 10rem;
+    height: auto;
+}
+
+div.pizza-name {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0 0.25rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.pizza-timing, div.pizza-props {
+    display: flex;
+    flex-flow: column;
+}
+
+div.pizza-timing {
+    margin-right: 1.5rem;
+}
+
+div.pizza-props {
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+div.pizza-timing > *, div.pizza-props > div {
+    line-height: 1.5rem;
+}
+
+div.pizza-ready {
+    color: var(--c-accent-alert);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 300px) {
+    #logo {
+        display: none;
+    }
+    #current-time {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #copyright {
+        display: none;
+    }
+    #logo > div {
+        background: url(../img/logo-symbol.png) no-repeat left;
+        background-size: auto 3rem;
+    }
+}
+
+@media screen and (max-width: 607px) {
+    #office-address {
+        display: none;
+    }
+    #current-time {
+        width: auto;
+    }
+    #logo {
+        width: 3rem;
+    }
+    #logo > div {
+        background: url(../img/logo-symbol.png) no-repeat right;
+        background-size: auto 3rem;
+    }
+}
