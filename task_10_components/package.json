@@ -1,0 +1,16 @@
+{
+  "name": "index",
+  "version": "0.0.1",
+  "description": "Weather WebApp on Components",
+  "main": "./src/index.html",
+  "author": "Oleksiy Rudenko",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel ./src/index.html --public-url ./",
+    "watch": "parcel watch ./src/index.html --public-url ./",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "build": "parcel build ./src/index.html --public-url ./"
+  },
+  "devDependencies": {}
+}
