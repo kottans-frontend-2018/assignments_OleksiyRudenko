@@ -10,6 +10,7 @@
     --color-neutral-xparent:  rgba(153, 153, 153, 0.8);
     --color-light-xparent:    rgba(187, 187, 187, 0.8);
     --color-lightest-xparent: rgba(238, 238, 238, 0.8);
+    --color-white-xparent:    rgba(255,255,255,0.6);
 }
 
 html {
@@ -38,4 +39,37 @@ body {
 
 body, p, h1, button {
     font-family: Verdana, Geneva, sans-serif;
+}
+
+/* buttons */
+
+button {
+    cursor: pointer;
+    color: var(--color-darkest);
+}
+
+.btn-frameless {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 1.2rem;
+}
+
+.btn-frameless:hover:enabled {
+    background-color: CornflowerBlue;
+}
+
+.btn-frameless:disabled {
+    cursor: not-allowed;
+}
+
+.btn-round {
+    background-color: var(--color-neutral-xparent);
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
 }
