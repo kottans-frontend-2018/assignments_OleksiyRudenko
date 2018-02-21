@@ -4,7 +4,7 @@ import './style.css';
 export default class LocationSearch {
   constructor() {
     this.uiElements = {
-      form: html.createElement({
+      host: html.createElement({
         tag: 'form',
         id: 'location-search-form',
         attr: {
@@ -50,8 +50,8 @@ export default class LocationSearch {
       classList: ['btn-frameless', 'btn-round', 'location-search-btn'],
     });
     this.uiElements.searchButton.innerHTML = '<i class="material-icons">search</i>';
-    this.uiElements.form.appendChild(this.uiElements.textInputWrapper);
-    this.uiElements.form.appendChild(this.uiElements.searchButton);
+    this.uiElements.host.appendChild(this.uiElements.textInputWrapper);
+    this.uiElements.host.appendChild(this.uiElements.searchButton);
 
     /*
     this.uiElements.form.innerHTML = `
@@ -80,6 +80,8 @@ export default class LocationSearch {
     this.uiElements.searchButton = document.getElementById('location-search-action'); */
     // console.log(this.uiElements);
     this.uiElements.textInput.addEventListener('input', this.handleUserInput.bind(this));
+    this.uiElements.host.addEventListener('submit', this.handleSearchSubmission.bind(this));
+    this.uiElements.searchButton.addEventListener('click', this.handleSearchSubmission.bind(this));
   }
 
   /**
@@ -88,5 +90,28 @@ export default class LocationSearch {
    */
   handleUserInput(ev) {
     this.uiElements.searchButton.disabled = ev.target.value.length < 3;
+  }
+
+  /**
+   * Handles search submission
+   * @param {Event} ev
+   */
+  handleSearchSubmission(ev) {
+    ev.preventDefault();
+    this.dispatchLocationSearchEvent(this.uiElements.textInput.value.trim());
+  }
+
+  /**
+   * Dispatches location-search event
+   * @param {string} location
+   */
+  dispatchLocationSearchEvent(location) {
+    if (!!location) {
+      this.uiElements.host.dispatchEvent(new CustomEvent('location-search', {
+        detail: { location: location },
+        bubbles: true,
+        cancelable: false,
+      }));
+    }
   }
 }
