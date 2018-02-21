@@ -1,8 +1,8 @@
 {
-  "name": "index",
+  "name": "weather-web-app",
   "version": "0.0.1",
   "description": "Weather WebApp on Components",
-  "main": "./src/index.html",
+  "main": "index.html",
   "author": "Oleksiy Rudenko",
   "license": "MIT",
   "private": false,
