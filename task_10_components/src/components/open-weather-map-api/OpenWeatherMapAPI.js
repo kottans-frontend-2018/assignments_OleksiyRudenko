@@ -44,8 +44,8 @@ export default class OpenWeatherMapAPI {
     const splitLocation = location.split(/[\s,]/);
     const params = /^[\-\d\s,.]+$/.test(location)
       ? {
-        lon: splitLocation[0],
-        lat: splitLocation[splitLocation.length-1],
+        lat: splitLocation[0],
+        lon: splitLocation[splitLocation.length-1],
       }
       : {
         q: location,
