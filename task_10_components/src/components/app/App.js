@@ -11,7 +11,7 @@ export default class App {
   constructor(containerElement) {
     this.uiElements = {
       parent : containerElement,
-      container: html.createElement({
+      host: html.createElement({
         tag: 'div',
         id: 'app-container',
       }),
@@ -30,36 +30,17 @@ export default class App {
    * Renders application and its components
    */
   render() {
-    this.uiElements.parent.appendChild(this.uiElements.container);
-    this.components.LocationSearch.uiElements.form.addEventListener('submit', this.handleFormSubmission.bind(this));
-    this.components.LocationSearch.uiElements.searchButton.addEventListener('click', this.handleSearchButton.bind(this));
-    this.uiElements.container.appendChild(this.components.LocationSearch.uiElements.form);
-  }
-
-  /**
-   * Handles form submission
-   * @param ev
-   */
-  handleFormSubmission(ev) {
-    ev.preventDefault();
-    this.getWeather(ev.target.elements['location-search-text'].value);
-  }
-
-  /**
-   * Handles search button click
-   * @param {Event} ev
-   */
-  handleSearchButton(ev) {
-    ev.preventDefault();
-    this.getWeather(this.components.LocationSearch.uiElements.textInput.value);
+    this.uiElements.host.appendChild(this.components.LocationSearch.uiElements.host);
+    this.uiElements.host.addEventListener('location-search', this.handleLocationSearch.bind(this));
+    this.uiElements.parent.appendChild(this.uiElements.host);
   }
 
   /**
    * Gets current weather and weather forecast for given location
-   * @param {string} location
+   * @param {Event} ev
    */
-  getWeather(location) {
-    location = location.trim();
+  handleLocationSearch(ev) {
+    const location = ev.detail.location;
     if (!!location) {
       Promise.all([
         this.components.WeatherApi.getCurrentWeather(location, this.config.units),
