@@ -7,7 +7,8 @@
  *            id:string,
  *            classList:string|[...string],
  *            attr: {attr-name:attr-value},
- *            children:HTMLElement|[...HTMLElement] }
+ *            children:HTMLElement|[...HTMLElement]
+ *            innerHTML:string }
  */
 export const createElement = function(options={tag:'div'}) {
   if (!options) options = 'div';
@@ -30,6 +31,9 @@ export const createElement = function(options={tag:'div'}) {
       element.setAttribute(key, options.attr[key]);
     });
   }
+  if (!!options.innerHTML) {
+    element.innerHTML = options.innerHTML;
+  }
   if (!!options.children) {
     if (!Array.isArray(options.children)) options.children = [options.children];
     options.children.forEach(child => {
@@ -51,3 +55,14 @@ export const cloneNodeAs = function(node, id, deep = true) {
   element.id = id;
   return element;
 };
+
+/**
+ * DOM mutation observer. Used when some element gets updated via .innerHTML.
+ * Usage:
+ * const observer = new DOMMutationObserver(function(mutationsList){}); // register a callback to invoke upon mutation
+ * const config = {attributes: true, childList: true};
+ * observer.observe(targetNode, config);
+ * observer.disconnect(); // Stop observing when not required anymore
+ * // https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+ */
+export const DOMMutationObserver =  window.MutationObserver || window.WebKitMutationObserver;

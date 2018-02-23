@@ -1,0 +1,11 @@
+.fav-city-button-no {
+    color: var(--color-light);
+}
+
+.fav-city-button-yes {
+    color: yellow;
+}
+
+.fav-city-button-hidden {
+    display: none;
+}

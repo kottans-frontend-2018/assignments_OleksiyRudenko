@@ -1,0 +1,83 @@
+#current-weather-container {
+    margin-top: 1rem;
+    background-color: rgba(238,238,238,0.5); /* #eee */
+
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.current-weather-row {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.current-weather-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.current-weather-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.current-weather-column > div {
+    margin: 0.5rem;
+}
+
+.current-weather-item {
+    height: 2.5rem;
+    font-size: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.current-weather-location {
+    font-size: 3rem;
+}
+
+.current-weather-geocoord {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+}
+
+.current-weather-header {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.current-weather-data {
+}
+
+.current-weather-main-item {
+    padding: 0 10px 0 10px;
+}
+
+.current-weather-icon {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+.current-weather-temp {
+    font-size: 3.5rem;
+}
+
+.current-weather-descr-main {
+    justify-content: center;
+    font-size: 2.4rem;
+}
+
+.current-weather-descr-extended {
+    color: var(--color-dark);
+}

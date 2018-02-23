@@ -1,9 +1,9 @@
 #app-container {
     margin-top: 3rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 789px;
 
-    background-color: lightblue;
+    /* background-color: lightblue; */
 
     display: flex;
     flex-direction: column;
@@ -12,4 +12,11 @@
 
 #app-container > * {
     padding: 0.5rem;
+}
+
+#app-weather-container {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column;
 }

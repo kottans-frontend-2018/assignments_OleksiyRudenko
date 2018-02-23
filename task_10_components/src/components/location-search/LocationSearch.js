@@ -89,6 +89,9 @@ export default class LocationSearch {
    * @param {Event} ev
    */
   handleUserInput(ev) {
+    if (ev.keyCode === 13) {
+      this.handleSearchSubmission(ev);
+    }
     this.uiElements.searchButton.disabled = ev.target.value.length < 3;
   }
 
